@@ -1,0 +1,172 @@
+{
+  "summary": {
+    "collectionsRowCount": 99,
+    "salesRowCount": 99,
+    "collectionsTotalPosCrs": 50.7742,
+    "collectionsTotalAccounts": 561,
+    "salesTotalDisbAmount": 9341622,
+    "salesTotalDisbCount": 31,
+    "salesTotalSanctionedAmount": 20910687,
+    "salesTotalLoginAmount": 98925000,
+    "collectionsSnapshotPeriod": "August 2026 (Month-End Snapshot: 2026-08-26)",
+    "salesSnapshotPeriod": "August - September 2026 (Monthly Series)",
+    "branchMappingMatchRate": 100,
+    "districtNormalizationMatchRate": 100
+  },
+  "collectionsChecks": {
+    "nullPosCount": 0,
+    "negativePosCount": 0,
+    "statesIdentified": [
+      "Andhra Pradesh",
+      "Chhattisgarh",
+      "Delhi NCR",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand"
+    ],
+    "delhiNcrDistricts": [
+      {
+        "district": "GHAZIABAD",
+        "mappedState": "Uttar Pradesh",
+        "posCrs": 3.0341342
+      },
+      {
+        "district": "GAUTAM BUDDHA NAGAR",
+        "mappedState": "Uttar Pradesh",
+        "posCrs": 0.0098417
+      },
+      {
+        "district": "SOUTH DELHI",
+        "mappedState": "Delhi",
+        "posCrs": 1.2139226
+      },
+      {
+        "district": "GAUTAM BUDDHA NAGAR",
+        "mappedState": "Uttar Pradesh",
+        "posCrs": 5.843235
+      },
+      {
+        "district": "NORTH WEST DELHI",
+        "mappedState": "Delhi",
+        "posCrs": 0.0282331
+      },
+      {
+        "district": "WEST DELHI",
+        "mappedState": "Delhi",
+        "posCrs": 0.125036
+      },
+      {
+        "district": "WEST DELHI",
+        "mappedState": "Delhi",
+        "posCrs": 3.26640439999999
+      },
+      {
+        "district": "GURGAON",
+        "mappedState": "Haryana",
+        "posCrs": 0.025945
+      },
+      {
+        "district": "SHAHDARA",
+        "mappedState": "Delhi",
+        "posCrs": 0.1420544
+      },
+      {
+        "district": "GHAZIABAD",
+        "mappedState": "Uttar Pradesh",
+        "posCrs": 0.0092105
+      }
+    ],
+    "bucketDistribution": {
+      "1.B1": {
+        "count": 76,
+        "posCrs": 40.930723
+      },
+      "4.NPA": {
+        "count": 16,
+        "posCrs": 9.475880799999988
+      },
+      "2.B2": {
+        "count": 4,
+        "posCrs": 0.21315979999999998
+      },
+      "4.Opening_NPA": {
+        "count": 1,
+        "posCrs": 0.0519235
+      },
+      "3.B3": {
+        "count": 2,
+        "posCrs": 0.1025092
+      }
+    },
+    "dispositionTagDistribution": {
+      "unallocated": 54,
+      "Call_Center": 17,
+      "Field_Referral": 22,
+      "Strategic_Allocation": 3,
+      "Agency_Referral": 2,
+      "Self_Cure": 1
+    },
+    "allocationTypeDistribution": {
+      "unallocated": 75,
+      "Field_Referral": 15,
+      "Call-Agency": 3,
+      "Call_Center": 3,
+      "Strategic_Allocation": 3
+    }
+  },
+  "salesChecks": {
+    "branchesTotal": 88,
+    "branchesMapped": 88,
+    "unmappedBranches": [],
+    "zeroDisbursementRows": 89,
+    "deptDistribution": {
+      "LAP": 10,
+      "UBL": 2,
+      "HL": 63,
+      "Others": 2,
+      "PL": 15,
+      "UCL": 4,
+      "MLAP": 1,
+      "Unknown": 2
+    },
+    "leadSourceDistribution": {
+      "CSC": 10,
+      "SELF": 10,
+      "DIGITALLY_SOURCED": 2,
+      "DSA": 25,
+      "CONNECTOR": 23,
+      "MEDIA": 6,
+      "Sammaan": 2,
+      "PRIME_XSELL": 1,
+      "ALTERNATE_CHANNEL": 1,
+      "Connector": 5,
+      "SFDC_CRM": 3,
+      "Direct by Sales Team": 3,
+      "SAMMAAN": 2,
+      "Vakrangee": 1,
+      "WEBSITE": 1,
+      "BLS": 1,
+      "CALL_CENTER": 1,
+      "LIVSPACE": 1,
+      "SAFAL": 1
+    }
+  },
+  "criticalModelingNotices": [
+    "Fact Separation: Collections and Sales are modeled as independent fact cubes without synthetic loan-level joins.",
+    "Delhi NCR Normalization: 10 records tagged as \"Delhi NCR\" (POS: ~13.70 Cr) contain districts belonging to Uttar Pradesh (Ghaziabad, Gautam Buddha Nagar), Haryana (Gurgaon), and NCT of Delhi.",
+    "Classification Integrity: \"unallocated\" tags in Disposition and Allocation reflect operational staging, not confirmed collection failure.",
+    "Bucket Definitions: Delinquency buckets represent point-in-time portfolio delinquency (1.B1 to 4.NPA) and are documented transparently without arbitrary NPA inflation."
+  ]
+}

@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Production Build
+dist/
+build/
+
+# Logs & OS
+*.log
+.DS_Store
+.env
+.env.local

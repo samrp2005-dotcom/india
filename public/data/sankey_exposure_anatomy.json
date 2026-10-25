@@ -1,0 +1,571 @@
+{
+  "nodes": [
+    {
+      "name": "Maharashtra",
+      "category": "State"
+    },
+    {
+      "name": "UCL",
+      "category": "Product"
+    },
+    {
+      "name": "1.B1",
+      "category": "Bucket"
+    },
+    {
+      "name": "unallocated",
+      "category": "Allocation"
+    },
+    {
+      "name": "Karnataka",
+      "category": "State"
+    },
+    {
+      "name": "SHAKTI",
+      "category": "Product"
+    },
+    {
+      "name": "Delhi NCR",
+      "category": "State"
+    },
+    {
+      "name": "HL",
+      "category": "Product"
+    },
+    {
+      "name": "PL",
+      "category": "Product"
+    },
+    {
+      "name": "Tamil Nadu",
+      "category": "State"
+    },
+    {
+      "name": "Telangana",
+      "category": "State"
+    },
+    {
+      "name": "4.NPA",
+      "category": "Bucket"
+    },
+    {
+      "name": "Field_Referral",
+      "category": "Allocation"
+    },
+    {
+      "name": "EF",
+      "category": "Product"
+    },
+    {
+      "name": "Uttar Pradesh",
+      "category": "State"
+    },
+    {
+      "name": "Kerala",
+      "category": "State"
+    },
+    {
+      "name": "MSME",
+      "category": "Product"
+    },
+    {
+      "name": "Call-Agency",
+      "category": "Allocation"
+    },
+    {
+      "name": "Call_Center",
+      "category": "Allocation"
+    },
+    {
+      "name": "2.B2",
+      "category": "Bucket"
+    },
+    {
+      "name": "Rajasthan",
+      "category": "State"
+    },
+    {
+      "name": "Andhra Pradesh",
+      "category": "State"
+    },
+    {
+      "name": "Punjab",
+      "category": "State"
+    },
+    {
+      "name": "4.Opening_NPA",
+      "category": "Bucket"
+    },
+    {
+      "name": "Strategic_Allocation",
+      "category": "Allocation"
+    },
+    {
+      "name": "UBL",
+      "category": "Product"
+    },
+    {
+      "name": "Madhya Pradesh",
+      "category": "State"
+    },
+    {
+      "name": "Tripura",
+      "category": "State"
+    },
+    {
+      "name": "Chhattisgarh",
+      "category": "State"
+    },
+    {
+      "name": "Himachal Pradesh",
+      "category": "State"
+    },
+    {
+      "name": "Gujarat",
+      "category": "State"
+    },
+    {
+      "name": "Haryana",
+      "category": "State"
+    },
+    {
+      "name": "Jharkhand",
+      "category": "State"
+    },
+    {
+      "name": "3.B3",
+      "category": "Bucket"
+    },
+    {
+      "name": "Uttarakhand",
+      "category": "State"
+    }
+  ],
+  "links": [
+    {
+      "source": "Maharashtra",
+      "target": "UCL",
+      "value": 0.0733
+    },
+    {
+      "source": "UCL",
+      "target": "1.B1",
+      "value": 0.5105
+    },
+    {
+      "source": "1.B1",
+      "target": "unallocated",
+      "value": 40.3761
+    },
+    {
+      "source": "Karnataka",
+      "target": "SHAKTI",
+      "value": 0.6821
+    },
+    {
+      "source": "SHAKTI",
+      "target": "1.B1",
+      "value": 1.9361
+    },
+    {
+      "source": "Delhi NCR",
+      "target": "HL",
+      "value": 13.3577
+    },
+    {
+      "source": "HL",
+      "target": "1.B1",
+      "value": 27.8777
+    },
+    {
+      "source": "Maharashtra",
+      "target": "HL",
+      "value": 5.6598
+    },
+    {
+      "source": "Delhi NCR",
+      "target": "PL",
+      "value": 0.0098
+    },
+    {
+      "source": "PL",
+      "target": "1.B1",
+      "value": 0.5253
+    },
+    {
+      "source": "Tamil Nadu",
+      "target": "HL",
+      "value": 0.9655
+    },
+    {
+      "source": "Telangana",
+      "target": "SHAKTI",
+      "value": 0.6275
+    },
+    {
+      "source": "SHAKTI",
+      "target": "4.NPA",
+      "value": 0.1023
+    },
+    {
+      "source": "4.NPA",
+      "target": "Field_Referral",
+      "value": 0.5037
+    },
+    {
+      "source": "Tamil Nadu",
+      "target": "UCL",
+      "value": 0.3022
+    },
+    {
+      "source": "Telangana",
+      "target": "HL",
+      "value": 1.7005
+    },
+    {
+      "source": "Telangana",
+      "target": "EF",
+      "value": 0.1373
+    },
+    {
+      "source": "EF",
+      "target": "4.NPA",
+      "value": 0.1772
+    },
+    {
+      "source": "Uttar Pradesh",
+      "target": "SHAKTI",
+      "value": 0.0643
+    },
+    {
+      "source": "Kerala",
+      "target": "MSME",
+      "value": 0.0877
+    },
+    {
+      "source": "MSME",
+      "target": "4.NPA",
+      "value": 5.6002
+    },
+    {
+      "source": "4.NPA",
+      "target": "unallocated",
+      "value": 8.9722
+    },
+    {
+      "source": "Uttar Pradesh",
+      "target": "UCL",
+      "value": 0.0469
+    },
+    {
+      "source": "1.B1",
+      "target": "Call-Agency",
+      "value": 0.2856
+    },
+    {
+      "source": "Tamil Nadu",
+      "target": "SHAKTI",
+      "value": 0.0021
+    },
+    {
+      "source": "1.B1",
+      "target": "Call_Center",
+      "value": 0.0527
+    },
+    {
+      "source": "Karnataka",
+      "target": "MSME",
+      "value": 4.8216
+    },
+    {
+      "source": "MSME",
+      "target": "1.B1",
+      "value": 8.0263
+    },
+    {
+      "source": "Karnataka",
+      "target": "HL",
+      "value": 0.9641
+    },
+    {
+      "source": "HL",
+      "target": "2.B2",
+      "value": 0.1759
+    },
+    {
+      "source": "2.B2",
+      "target": "unallocated",
+      "value": 0.1759
+    },
+    {
+      "source": "Rajasthan",
+      "target": "MSME",
+      "value": 0.1079
+    },
+    {
+      "source": "Andhra Pradesh",
+      "target": "SHAKTI",
+      "value": 0.0115
+    },
+    {
+      "source": "Punjab",
+      "target": "HL",
+      "value": 0.788
+    },
+    {
+      "source": "Tamil Nadu",
+      "target": "MSME",
+      "value": 1.2511
+    },
+    {
+      "source": "MSME",
+      "target": "4.Opening_NPA",
+      "value": 0.0519
+    },
+    {
+      "source": "4.Opening_NPA",
+      "target": "unallocated",
+      "value": 0.0519
+    },
+    {
+      "source": "Delhi NCR",
+      "target": "UCL",
+      "value": 0.0282
+    },
+    {
+      "source": "1.B1",
+      "target": "Strategic_Allocation",
+      "value": 0.2163
+    },
+    {
+      "source": "Maharashtra",
+      "target": "MSME",
+      "value": 6.6346
+    },
+    {
+      "source": "Maharashtra",
+      "target": "PL",
+      "value": 0.0356
+    },
+    {
+      "source": "Tamil Nadu",
+      "target": "UBL",
+      "value": 0.0222
+    },
+    {
+      "source": "UBL",
+      "target": "4.NPA",
+      "value": 0.2242
+    },
+    {
+      "source": "Rajasthan",
+      "target": "HL",
+      "value": 1.1038
+    },
+    {
+      "source": "SHAKTI",
+      "target": "2.B2",
+      "value": 0.018
+    },
+    {
+      "source": "2.B2",
+      "target": "Field_Referral",
+      "value": 0.0372
+    },
+    {
+      "source": "Uttar Pradesh",
+      "target": "EF",
+      "value": 0.0162
+    },
+    {
+      "source": "Madhya Pradesh",
+      "target": "SHAKTI",
+      "value": 0.0092
+    },
+    {
+      "source": "Delhi NCR",
+      "target": "EF",
+      "value": 0.125
+    },
+    {
+      "source": "EF",
+      "target": "1.B1",
+      "value": 0.1874
+    },
+    {
+      "source": "HL",
+      "target": "4.NPA",
+      "value": 3.372
+    },
+    {
+      "source": "Delhi NCR",
+      "target": "SHAKTI",
+      "value": 0.0352
+    },
+    {
+      "source": "Delhi NCR",
+      "target": "MSME",
+      "value": 0.1421
+    },
+    {
+      "source": "Andhra Pradesh",
+      "target": "HL",
+      "value": 1.5419
+    },
+    {
+      "source": "Telangana",
+      "target": "MSME",
+      "value": 0.318
+    },
+    {
+      "source": "Tripura",
+      "target": "SHAKTI",
+      "value": 0.0069
+    },
+    {
+      "source": "Chhattisgarh",
+      "target": "SHAKTI",
+      "value": 0.064
+    },
+    {
+      "source": "Himachal Pradesh",
+      "target": "SHAKTI",
+      "value": 0.0481
+    },
+    {
+      "source": "Gujarat",
+      "target": "UCL",
+      "value": 0.0086
+    },
+    {
+      "source": "Uttar Pradesh",
+      "target": "MSME",
+      "value": 0.1138
+    },
+    {
+      "source": "Haryana",
+      "target": "UBL",
+      "value": 0.1303
+    },
+    {
+      "source": "UBL",
+      "target": "1.B1",
+      "value": 1.8673
+    },
+    {
+      "source": "Telangana",
+      "target": "UCL",
+      "value": 0.0267
+    },
+    {
+      "source": "Gujarat",
+      "target": "SHAKTI",
+      "value": 0.4509
+    },
+    {
+      "source": "Punjab",
+      "target": "PL",
+      "value": 0.2646
+    },
+    {
+      "source": "Jharkhand",
+      "target": "PL",
+      "value": 0.2656
+    },
+    {
+      "source": "PL",
+      "target": "3.B3",
+      "value": 0.0504
+    },
+    {
+      "source": "3.B3",
+      "target": "Field_Referral",
+      "value": 0.0504
+    },
+    {
+      "source": "Uttarakhand",
+      "target": "HL",
+      "value": 4.9466
+    },
+    {
+      "source": "Uttar Pradesh",
+      "target": "HL",
+      "value": 0.3977
+    },
+    {
+      "source": "Gujarat",
+      "target": "UBL",
+      "value": 0.0522
+    },
+    {
+      "source": "Gujarat",
+      "target": "MSME",
+      "value": 0.2538
+    },
+    {
+      "source": "MSME",
+      "target": "3.B3",
+      "value": 0.0521
+    },
+    {
+      "source": "3.B3",
+      "target": "unallocated",
+      "value": 0.0521
+    },
+    {
+      "source": "Haryana",
+      "target": "UCL",
+      "value": 0.0247
+    },
+    {
+      "source": "Karnataka",
+      "target": "EF",
+      "value": 0.0203
+    },
+    {
+      "source": "Jharkhand",
+      "target": "SHAKTI",
+      "value": 0.0546
+    },
+    {
+      "source": "Maharashtra",
+      "target": "UBL",
+      "value": 0.0259
+    },
+    {
+      "source": "Andhra Pradesh",
+      "target": "UBL",
+      "value": 1.6298
+    },
+    {
+      "source": "Punjab",
+      "target": "UBL",
+      "value": 0.0813
+    },
+    {
+      "source": "Andhra Pradesh",
+      "target": "EF",
+      "value": 0.0816
+    },
+    {
+      "source": "EF",
+      "target": "2.B2",
+      "value": 0.0193
+    },
+    {
+      "source": "Uttar Pradesh",
+      "target": "UBL",
+      "value": 0.1478
+    },
+    {
+      "source": "Maharashtra",
+      "target": "EF",
+      "value": 0.0035
+    },
+    {
+      "source": "Madhya Pradesh",
+      "target": "UBL",
+      "value": 0.002
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #08131F;
+    --surface: #101F30;
+    --surface-elevated: #172A3E;
+    --primary-teal: #54D7C7;
+    --accent-blue: #63A9F5;
+    --coral: #FF8A70;
+  }
+
+  body {
+    background-color: #08131F;
+    color: #EDF5F7;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+}
+
+/* Custom Scrollbar for Terminal aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1928;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E354D;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2E4C6D;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(16, 31, 48, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(30, 53, 77, 0.65);
+}
+
+.glass-panel-elevated {
+  background: rgba(23, 42, 62, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(46, 76, 109, 0.7);
+}
+
+.glass-dropdown {
+  background: rgba(13, 25, 39, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(46, 76, 109, 0.8);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Glow Borders */
+.border-glow-teal {
+  border-color: #54D7C7;
+  box-shadow: 0 0 15px -3px rgba(84, 215, 199, 0.35);
+}
+
+.border-glow-coral {
+  border-color: #FF8A70;
+  box-shadow: 0 0 15px -3px rgba(255, 138, 112, 0.35);
+}
+
+/* MapLibre custom control resets */
+.maplibregl-ctrl-group {
+  background: rgba(16, 31, 48, 0.85) !important;
+  border: 1px solid #1E354D !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+.maplibregl-ctrl-group button {
+  background-color: transparent !important;
+  border-bottom: 1px solid #1E354D !important;
+}
+
+.maplibregl-ctrl-group button:last-child {
+  border-bottom: none !important;
+}
+
+.maplibregl-ctrl-icon {
+  filter: invert(1) hue-rotate(140deg);
+}
+
+.maplibregl-popup-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.maplibregl-popup-tip {
+  display: none !important;
+}
+
+/* Pulse Keyframes */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

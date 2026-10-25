@@ -1,0 +1,84 @@
+[
+  {
+    "id": "insight-conc-1",
+    "category": "Concentration",
+    "title": "Maharashtra Holds Largest Collections Exposure",
+    "observation": "Maharashtra represents ₹12.43 Cr (24.49% of total recorded collections POS).",
+    "supportingValues": [
+      "Exposure: ₹12.43 Cr",
+      "Share: 24.49%",
+      "Accounts: 110",
+      "Districts Active: 8"
+    ],
+    "whyItMatters": "High concentration in a single regional cluster amplifies credit risk exposure to localized economic, regulatory, or geographic shocks.",
+    "suggestedFollowUp": "Examine district-level distribution inside Maharashtra to verify whether exposure is concentrated in tier-1 metro clusters or dispersed across rural hubs.",
+    "confidence": "High (Verified Math)",
+    "relatedGeography": "Maharashtra",
+    "metricValue": 12.4327
+  },
+  {
+    "id": "insight-press-1",
+    "category": "Pressure",
+    "title": "Elevated Bucket Migration in Delhi",
+    "observation": "Delhi exhibits a 68.4% delinquency ratio (B2, B3, and NPA buckets combined) across ₹4.78 Cr of POS.",
+    "supportingValues": [
+      "Delinquency Share: 68.4%",
+      "NPA Share: 68.4%",
+      "B1 Share: 31.6%",
+      "Total POS: ₹4.78 Cr"
+    ],
+    "whyItMatters": "Delinquency beyond Bucket 1 (30+ DPD) has lower resolution probability and requires escalating operational allocation.",
+    "suggestedFollowUp": "Audit the product lines contributing to delinquent accounts in Delhi and verify agency deployment.",
+    "confidence": "High (Verified Math)",
+    "relatedGeography": "Delhi",
+    "metricValue": 68.4
+  },
+  {
+    "id": "insight-alloc-1",
+    "category": "Operational Allocation",
+    "title": "High Unallocated Capacity Across Active Portfolio",
+    "observation": "₹49.63 Cr (97.7% of total Collections POS) currently holds 'unallocated' Business Allocation status.",
+    "supportingValues": [
+      "Unallocated POS: ₹49.63 Cr",
+      "Unallocated Ratio: 97.7%",
+      "Allocated to Field: ₹0.59 Cr"
+    ],
+    "whyItMatters": "Unallocated cases rely predominantly on automated digital reminders and banking mandates rather than intensive remedial contact.",
+    "suggestedFollowUp": "Verify whether unallocated accounts represent low-risk self-cure cohorts or an operational backlog requiring agency allocation.",
+    "confidence": "High (Verified Math)",
+    "metricValue": 97.743055363734
+  },
+  {
+    "id": "insight-prod-1",
+    "category": "Cross-Segment Divergence",
+    "title": "HL Anchors 61.9% of Total Portfolio Exposure",
+    "observation": "HL constitutes ₹31.43 Cr across 268 active accounts, making it the primary asset class.",
+    "supportingValues": [
+      "Asset Class: HL",
+      "Exposure: ₹31.43 Cr",
+      "Portfolio Share: 61.9%",
+      "Sub-products Count: 4"
+    ],
+    "whyItMatters": "Asset-backed lending typically carries higher recovery rates via collateral, but requires different enforcement workflows than unsecured lines.",
+    "suggestedFollowUp": "Cross-filter HL on the map to evaluate if pressure is uniform or isolated to specific branch catchments.",
+    "confidence": "High (Verified Math)",
+    "metricValue": 31.426
+  },
+  {
+    "id": "insight-ncr-1",
+    "category": "Operational Allocation",
+    "title": "Delhi NCR Cluster Combines Cross-Border Districts",
+    "observation": "The operational 'Delhi NCR' tag encompasses 10 collection records totaling ₹13.70 Cr POS across 3 distinct political jurisdictions (UP, Haryana, and NCT of Delhi).",
+    "supportingValues": [
+      "Total NCR POS: ₹13.70 Cr (27.0% of total)",
+      "UP Districts: Ghaziabad, Gautam Buddha Nagar",
+      "Haryana District: Gurgaon",
+      "Delhi Districts: South, West, North West, Shahdara"
+    ],
+    "whyItMatters": "Standard boundary joins fail if 'Delhi NCR' is arbitrarily merged into Delhi alone, heavily misrepresenting UP and Haryana portfolio sizes.",
+    "suggestedFollowUp": "Use the 'Normalized Boundaries' mode in the top toolbar to inspect legal administrative jurisdictions vs operational branch management.",
+    "confidence": "High (Verified Math)",
+    "relatedGeography": "Delhi NCR",
+    "metricValue": 13.7
+  }
+]

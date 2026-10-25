@@ -1,0 +1,1299 @@
+[
+  {
+    "state": "Karnataka",
+    "district": "BANGALORE",
+    "posCrs": 5.857,
+    "accountsCount": 61,
+    "stateShare": 90.27,
+    "nationalShare": 11.54,
+    "bucketBreakdown": {
+      "1.B1": 5.7498914,
+      "4.NPA": 0.1070884
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.6821294999999999,
+      "MSME": 4.7862669,
+      "HL": 0.36833150000000003,
+      "EF": 0.0202519
+    },
+    "allocationBreakdown": {
+      "unallocated": 5.7498914,
+      "Field_Referral": 0.1070884
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "GAUTAM BUDDHA NAGAR",
+    "posCrs": 5.8531,
+    "accountsCount": 31,
+    "stateShare": 60.45,
+    "nationalShare": 11.53,
+    "bucketBreakdown": {
+      "1.B1": 5.8530767
+    },
+    "productBreakdown": {
+      "PL": 0.0098417,
+      "HL": 5.843235
+    },
+    "allocationBreakdown": {
+      "unallocated": 5.8530767
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "MUMBAI",
+    "posCrs": 5.7771,
+    "accountsCount": 30,
+    "stateShare": 46.47,
+    "nationalShare": 11.38,
+    "bucketBreakdown": {
+      "1.B1": 0.1766976,
+      "2.B2": 0.0879007,
+      "4.NPA": 5.5125377
+    },
+    "productBreakdown": {
+      "HL": 0.1098537,
+      "PL": 0.0356222,
+      "MSME": 5.6316601
+    },
+    "allocationBreakdown": {
+      "unallocated": 5.7771360000000005
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "DEHRADUN",
+    "posCrs": 4.9466,
+    "accountsCount": 67,
+    "stateShare": 100,
+    "nationalShare": 9.74,
+    "bucketBreakdown": {
+      "1.B1": 4.9466311
+    },
+    "productBreakdown": {
+      "HL": 4.9466311
+    },
+    "allocationBreakdown": {
+      "unallocated": 4.9466311
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "PUNE",
+    "posCrs": 3.9158,
+    "accountsCount": 43,
+    "stateShare": 31.5,
+    "nationalShare": 7.71,
+    "bucketBreakdown": {
+      "1.B1": 3.9157832
+    },
+    "productBreakdown": {
+      "HL": 3.340231,
+      "MSME": 0.5496404,
+      "UBL": 0.0259118
+    },
+    "allocationBreakdown": {
+      "unallocated": 3.8898714,
+      "Call_Center": 0.0259118
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Delhi",
+    "district": "WEST DELHI",
+    "posCrs": 3.3914,
+    "accountsCount": 20,
+    "stateShare": 71.02,
+    "nationalShare": 6.68,
+    "bucketBreakdown": {
+      "1.B1": 0.125036,
+      "4.NPA": 3.26640439999999
+    },
+    "productBreakdown": {
+      "EF": 0.125036,
+      "HL": 3.26640439999999
+    },
+    "allocationBreakdown": {
+      "unallocated": 3.3914403999999903
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "GHAZIABAD",
+    "posCrs": 3.0433,
+    "accountsCount": 22,
+    "stateShare": 31.43,
+    "nationalShare": 5.99,
+    "bucketBreakdown": {
+      "1.B1": 3.0433447
+    },
+    "productBreakdown": {
+      "HL": 3.0341342,
+      "SHAKTI": 0.0092105
+    },
+    "allocationBreakdown": {
+      "unallocated": 3.0433447
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "VISAKHAPATNAM",
+    "posCrs": 1.6298,
+    "accountsCount": 8,
+    "stateShare": 49.92,
+    "nationalShare": 3.21,
+    "bucketBreakdown": {
+      "1.B1": 1.6297902
+    },
+    "productBreakdown": {
+      "UBL": 1.6297902
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.6297902
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "GUNTUR",
+    "posCrs": 1.5419,
+    "accountsCount": 3,
+    "stateShare": 47.23,
+    "nationalShare": 3.04,
+    "bucketBreakdown": {
+      "1.B1": 1.5418848
+    },
+    "productBreakdown": {
+      "HL": 1.5418848
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.5418848
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "PARBHANI",
+    "posCrs": 1.2824,
+    "accountsCount": 18,
+    "stateShare": 10.31,
+    "nationalShare": 2.53,
+    "bucketBreakdown": {
+      "1.B1": 1.2823623
+    },
+    "productBreakdown": {
+      "HL": 1.2823623
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.2823623
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Delhi",
+    "district": "SOUTH DELHI",
+    "posCrs": 1.2139,
+    "accountsCount": 6,
+    "stateShare": 25.42,
+    "nationalShare": 2.39,
+    "bucketBreakdown": {
+      "1.B1": 1.2139226
+    },
+    "productBreakdown": {
+      "HL": 1.2139226
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.2139226
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "DINDIGUL",
+    "posCrs": 1.1992,
+    "accountsCount": 1,
+    "stateShare": 47.15,
+    "nationalShare": 2.36,
+    "bucketBreakdown": {
+      "1.B1": 1.199189
+    },
+    "productBreakdown": {
+      "MSME": 1.199189
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.199189
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "COIMBATORE",
+    "posCrs": 0.9278,
+    "accountsCount": 14,
+    "stateShare": 36.48,
+    "nationalShare": 1.83,
+    "bucketBreakdown": {
+      "4.Opening_NPA": 0.0519235,
+      "1.B1": 0.8758502
+    },
+    "productBreakdown": {
+      "MSME": 0.0519235,
+      "HL": 0.5975015,
+      "UCL": 0.2783487
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.9277737
+    },
+    "cityTier": "Tier E"
+  },
+  {
+    "state": "Telangana",
+    "district": "RANGAREDDY",
+    "posCrs": 0.897,
+    "accountsCount": 60,
+    "stateShare": 31.92,
+    "nationalShare": 1.77,
+    "bucketBreakdown": {
+      "1.B1": 0.865470599999999,
+      "4.NPA": 0.0314888
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.627470599999999,
+      "HL": 0.238,
+      "EF": 0.0314888
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.865470599999999,
+      "Field_Referral": 0.0314888
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Punjab",
+    "district": "PATIALA",
+    "posCrs": 0.7504,
+    "accountsCount": 20,
+    "stateShare": 66.18,
+    "nationalShare": 1.48,
+    "bucketBreakdown": {
+      "1.B1": 0.7504356
+    },
+    "productBreakdown": {
+      "HL": 0.4857968,
+      "PL": 0.2646388
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.7504356
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Telangana",
+    "district": "SIDDIPET",
+    "posCrs": 0.7233,
+    "accountsCount": 2,
+    "stateShare": 25.74,
+    "nationalShare": 1.42,
+    "bucketBreakdown": {
+      "1.B1": 0.7233423999999999
+    },
+    "productBreakdown": {
+      "MSME": 0.0610501,
+      "HL": 0.6622923
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.7233423999999999
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "UDAIPUR",
+    "posCrs": 0.6445,
+    "accountsCount": 8,
+    "stateShare": 53.19,
+    "nationalShare": 1.27,
+    "bucketBreakdown": {
+      "1.B1": 0.644454799999999
+    },
+    "productBreakdown": {
+      "HL": 0.644454799999999
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.644454799999999
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "JALGAON",
+    "posCrs": 0.6237,
+    "accountsCount": 8,
+    "stateShare": 5.02,
+    "nationalShare": 1.23,
+    "bucketBreakdown": {
+      "1.B1": 0.6237071
+    },
+    "productBreakdown": {
+      "HL": 0.6237071
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.6237071
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Karnataka",
+    "district": "HAVERI",
+    "posCrs": 0.5957,
+    "accountsCount": 5,
+    "stateShare": 9.18,
+    "nationalShare": 1.17,
+    "bucketBreakdown": {
+      "1.B1": 0.5957481
+    },
+    "productBreakdown": {
+      "HL": 0.5957481
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.5957481
+    },
+    "cityTier": "Tier E"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "NAGPUR",
+    "posCrs": 0.5841,
+    "accountsCount": 2,
+    "stateShare": 4.7,
+    "nationalShare": 1.15,
+    "bucketBreakdown": {
+      "1.B1": 0.5840766
+    },
+    "productBreakdown": {
+      "MSME": 0.4532651,
+      "HL": 0.1308115
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.5840766
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Telangana",
+    "district": "NALGONDA",
+    "posCrs": 0.4839,
+    "accountsCount": 1,
+    "stateShare": 17.22,
+    "nationalShare": 0.95,
+    "bucketBreakdown": {
+      "1.B1": 0.483943
+    },
+    "productBreakdown": {
+      "HL": 0.483943
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.483943
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "SRI GANGANAGAR",
+    "posCrs": 0.4593,
+    "accountsCount": 7,
+    "stateShare": 37.91,
+    "nationalShare": 0.9,
+    "bucketBreakdown": {
+      "1.B1": 0.4593151
+    },
+    "productBreakdown": {
+      "HL": 0.4593151
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.4593151
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Gujarat",
+    "district": "AHMEDABAD",
+    "posCrs": 0.4509,
+    "accountsCount": 13,
+    "stateShare": 58.91,
+    "nationalShare": 0.89,
+    "bucketBreakdown": {
+      "1.B1": 0.4509438
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.4509438
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.4509438
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "VARANASI",
+    "posCrs": 0.3977,
+    "accountsCount": 6,
+    "stateShare": 4.11,
+    "nationalShare": 0.78,
+    "bucketBreakdown": {
+      "1.B1": 0.397700199999999
+    },
+    "productBreakdown": {
+      "HL": 0.397700199999999
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.397700199999999
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "TIRUVALLUR",
+    "posCrs": 0.3041,
+    "accountsCount": 4,
+    "stateShare": 11.96,
+    "nationalShare": 0.6,
+    "bucketBreakdown": {
+      "1.B1": 0.3040844
+    },
+    "productBreakdown": {
+      "HL": 0.3040844
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.3040844
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Gujarat",
+    "district": "VALSAD",
+    "posCrs": 0.2538,
+    "accountsCount": 2,
+    "stateShare": 33.16,
+    "nationalShare": 0.5,
+    "bucketBreakdown": {
+      "1.B1": 0.2538202
+    },
+    "productBreakdown": {
+      "MSME": 0.2538202
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.2538202
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Telangana",
+    "district": "SURYAPET",
+    "posCrs": 0.2315,
+    "accountsCount": 2,
+    "stateShare": 8.24,
+    "nationalShare": 0.46,
+    "bucketBreakdown": {
+      "1.B1": 0.2315267
+    },
+    "productBreakdown": {
+      "MSME": 0.2048616,
+      "UCL": 0.0266651
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.2315267
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Telangana",
+    "district": "KARIM NAGAR",
+    "posCrs": 0.2282,
+    "accountsCount": 1,
+    "stateShare": 8.12,
+    "nationalShare": 0.45,
+    "bucketBreakdown": {
+      "1.B1": 0.2282408
+    },
+    "productBreakdown": {
+      "HL": 0.2282408
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.2282408
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "BOKARO",
+    "posCrs": 0.2152,
+    "accountsCount": 4,
+    "stateShare": 67.2,
+    "nationalShare": 0.42,
+    "bucketBreakdown": {
+      "1.B1": 0.215191399999999
+    },
+    "productBreakdown": {
+      "PL": 0.215191399999999
+    },
+    "allocationBreakdown": {
+      "Call-Agency": 0.215191399999999
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Telangana",
+    "district": "HYDERABAD",
+    "posCrs": 0.1938,
+    "accountsCount": 8,
+    "stateShare": 6.9,
+    "nationalShare": 0.38,
+    "bucketBreakdown": {
+      "2.B2": 0.0880112,
+      "4.NPA": 0.1057828
+    },
+    "productBreakdown": {
+      "HL": 0.0880112,
+      "EF": 0.1057828
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0880112,
+      "Field_Referral": 0.1057828
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "KANPUR DEHAT",
+    "posCrs": 0.1478,
+    "accountsCount": 3,
+    "stateShare": 1.53,
+    "nationalShare": 0.29,
+    "bucketBreakdown": {
+      "4.NPA": 0.1477874
+    },
+    "productBreakdown": {
+      "UBL": 0.1477874
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.1477874
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Delhi",
+    "district": "SHAHDARA",
+    "posCrs": 0.1421,
+    "accountsCount": 1,
+    "stateShare": 2.97,
+    "nationalShare": 0.28,
+    "bucketBreakdown": {
+      "1.B1": 0.1420544
+    },
+    "productBreakdown": {
+      "MSME": 0.1420544
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.1420544
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Punjab",
+    "district": "LUDHIANA",
+    "posCrs": 0.1409,
+    "accountsCount": 2,
+    "stateShare": 12.43,
+    "nationalShare": 0.28,
+    "bucketBreakdown": {
+      "1.B1": 0.1409482
+    },
+    "productBreakdown": {
+      "HL": 0.0596904,
+      "UBL": 0.0812578
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0596904,
+      "Strategic_Allocation": 0.0812578
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Punjab",
+    "district": "FARIDKOT",
+    "posCrs": 0.1348,
+    "accountsCount": 1,
+    "stateShare": 11.89,
+    "nationalShare": 0.27,
+    "bucketBreakdown": {
+      "1.B1": 0.1348
+    },
+    "productBreakdown": {
+      "HL": 0.1348
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.1348
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "YAVATMAL",
+    "posCrs": 0.1332,
+    "accountsCount": 5,
+    "stateShare": 1.07,
+    "nationalShare": 0.26,
+    "bucketBreakdown": {
+      "4.NPA": 0.105547399999999,
+      "1.B1": 0.0276595
+    },
+    "productBreakdown": {
+      "HL": 0.105547399999999,
+      "UCL": 0.0276595
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.133206899999999
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "SAHARANPUR",
+    "posCrs": 0.1138,
+    "accountsCount": 1,
+    "stateShare": 1.18,
+    "nationalShare": 0.22,
+    "bucketBreakdown": {
+      "1.B1": 0.113839
+    },
+    "productBreakdown": {
+      "MSME": 0.113839
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.113839
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "CHITTORGARH",
+    "posCrs": 0.1079,
+    "accountsCount": 1,
+    "stateShare": 8.91,
+    "nationalShare": 0.21,
+    "bucketBreakdown": {
+      "1.B1": 0.1079342
+    },
+    "productBreakdown": {
+      "MSME": 0.1079342
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.1079342
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Haryana",
+    "district": "ROHTAK",
+    "posCrs": 0.1068,
+    "accountsCount": 1,
+    "stateShare": 59.01,
+    "nationalShare": 0.21,
+    "bucketBreakdown": {
+      "1.B1": 0.1067879
+    },
+    "productBreakdown": {
+      "UBL": 0.1067879
+    },
+    "allocationBreakdown": {
+      "Strategic_Allocation": 0.1067879
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Kerala",
+    "district": "ERNAKULAM",
+    "posCrs": 0.0877,
+    "accountsCount": 3,
+    "stateShare": 100,
+    "nationalShare": 0.17,
+    "bucketBreakdown": {
+      "4.NPA": 0.0876885
+    },
+    "productBreakdown": {
+      "MSME": 0.0876885
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0876885
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Punjab",
+    "district": "ROPAR",
+    "posCrs": 0.084,
+    "accountsCount": 1,
+    "stateShare": 7.41,
+    "nationalShare": 0.17,
+    "bucketBreakdown": {
+      "1.B1": 0.084018
+    },
+    "productBreakdown": {
+      "HL": 0.084018
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.084018
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "SATARA",
+    "posCrs": 0.0673,
+    "accountsCount": 1,
+    "stateShare": 0.54,
+    "nationalShare": 0.13,
+    "bucketBreakdown": {
+      "1.B1": 0.0672814
+    },
+    "productBreakdown": {
+      "HL": 0.0672814
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0672814
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "DURG",
+    "posCrs": 0.064,
+    "accountsCount": 5,
+    "stateShare": 100,
+    "nationalShare": 0.13,
+    "bucketBreakdown": {
+      "1.B1": 0.0640368
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0640368
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0640368
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "ERODE",
+    "posCrs": 0.0639,
+    "accountsCount": 1,
+    "stateShare": 2.51,
+    "nationalShare": 0.13,
+    "bucketBreakdown": {
+      "1.B1": 0.0639469
+    },
+    "productBreakdown": {
+      "HL": 0.0639469
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0639469
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "EAST GODAVARI",
+    "posCrs": 0.0624,
+    "accountsCount": 3,
+    "stateShare": 1.91,
+    "nationalShare": 0.12,
+    "bucketBreakdown": {
+      "1.B1": 0.0623608
+    },
+    "productBreakdown": {
+      "EF": 0.0623608
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0623608
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Jharkhand",
+    "district": "DHANBAD",
+    "posCrs": 0.0546,
+    "accountsCount": 1,
+    "stateShare": 17.06,
+    "nationalShare": 0.11,
+    "bucketBreakdown": {
+      "1.B1": 0.0546307
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0546307
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0546307
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Gujarat",
+    "district": "BHARUCH",
+    "posCrs": 0.0522,
+    "accountsCount": 1,
+    "stateShare": 6.81,
+    "nationalShare": 0.1,
+    "bucketBreakdown": {
+      "4.NPA": 0.0521552
+    },
+    "productBreakdown": {
+      "UBL": 0.0521552
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0521552
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Telangana",
+    "district": "WARANGAL",
+    "posCrs": 0.0521,
+    "accountsCount": 1,
+    "stateShare": 1.85,
+    "nationalShare": 0.1,
+    "bucketBreakdown": {
+      "3.B3": 0.0520996
+    },
+    "productBreakdown": {
+      "MSME": 0.0520996
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0520996
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "SERAIKELAKHARSAWAN",
+    "posCrs": 0.0504,
+    "accountsCount": 1,
+    "stateShare": 15.74,
+    "nationalShare": 0.1,
+    "bucketBreakdown": {
+      "3.B3": 0.0504096
+    },
+    "productBreakdown": {
+      "PL": 0.0504096
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0504096
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "NASHIK",
+    "posCrs": 0.0491,
+    "accountsCount": 3,
+    "stateShare": 0.4,
+    "nationalShare": 0.1,
+    "bucketBreakdown": {
+      "1.B1": 0.0456460999999999,
+      "4.NPA": 0.0035031
+    },
+    "productBreakdown": {
+      "UCL": 0.0456460999999999,
+      "EF": 0.0035031
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0456460999999999,
+      "Field_Referral": 0.0035031
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "SHIMLA",
+    "posCrs": 0.0481,
+    "accountsCount": 3,
+    "stateShare": 100,
+    "nationalShare": 0.09,
+    "bucketBreakdown": {
+      "1.B1": 0.0480691
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0480691
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0480691
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "LUCKNOW",
+    "posCrs": 0.0469,
+    "accountsCount": 1,
+    "stateShare": 0.48,
+    "nationalShare": 0.09,
+    "bucketBreakdown": {
+      "1.B1": 0.0468679
+    },
+    "productBreakdown": {
+      "UCL": 0.0468679
+    },
+    "allocationBreakdown": {
+      "Call-Agency": 0.0468679
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "BULANDSHAHR",
+    "posCrs": 0.0423,
+    "accountsCount": 2,
+    "stateShare": 0.44,
+    "nationalShare": 0.08,
+    "bucketBreakdown": {
+      "1.B1": 0.0423439
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0423439
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0423439
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Karnataka",
+    "district": "MANDYA",
+    "posCrs": 0.0353,
+    "accountsCount": 1,
+    "stateShare": 0.54,
+    "nationalShare": 0.07,
+    "bucketBreakdown": {
+      "1.B1": 0.0353042
+    },
+    "productBreakdown": {
+      "MSME": 0.0353042
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0353042
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Delhi",
+    "district": "NORTH WEST DELHI",
+    "posCrs": 0.0282,
+    "accountsCount": 1,
+    "stateShare": 0.59,
+    "nationalShare": 0.06,
+    "bucketBreakdown": {
+      "1.B1": 0.0282331
+    },
+    "productBreakdown": {
+      "UCL": 0.0282331
+    },
+    "allocationBreakdown": {
+      "Strategic_Allocation": 0.0282331
+    },
+    "cityTier": "Tier A"
+  },
+  {
+    "state": "Haryana",
+    "district": "GURGAON",
+    "posCrs": 0.0259,
+    "accountsCount": 1,
+    "stateShare": 14.34,
+    "nationalShare": 0.05,
+    "bucketBreakdown": {
+      "1.B1": 0.025945
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.025945
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.025945
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Haryana",
+    "district": "HISAR",
+    "posCrs": 0.0247,
+    "accountsCount": 1,
+    "stateShare": 13.64,
+    "nationalShare": 0.05,
+    "bucketBreakdown": {
+      "1.B1": 0.0246801
+    },
+    "productBreakdown": {
+      "UCL": 0.0246801
+    },
+    "allocationBreakdown": {
+      "Call_Center": 0.0246801
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "DHARMAPURI",
+    "posCrs": 0.0239,
+    "accountsCount": 1,
+    "stateShare": 0.94,
+    "nationalShare": 0.05,
+    "bucketBreakdown": {
+      "1.B1": 0.0238551
+    },
+    "productBreakdown": {
+      "UCL": 0.0238551
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0238551
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Punjab",
+    "district": "JALANDHAR",
+    "posCrs": 0.0237,
+    "accountsCount": 1,
+    "stateShare": 2.09,
+    "nationalShare": 0.05,
+    "bucketBreakdown": {
+      "1.B1": 0.0236805
+    },
+    "productBreakdown": {
+      "HL": 0.0236805
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0236805
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Haryana",
+    "district": "AMBALA",
+    "posCrs": 0.0235,
+    "accountsCount": 1,
+    "stateShare": 13.01,
+    "nationalShare": 0.05,
+    "bucketBreakdown": {
+      "1.B1": 0.0235482
+    },
+    "productBreakdown": {
+      "UBL": 0.0235482
+    },
+    "allocationBreakdown": {
+      "Call-Agency": 0.0235482
+    },
+    "cityTier": "Tier D"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "SALEM",
+    "posCrs": 0.0222,
+    "accountsCount": 1,
+    "stateShare": 0.87,
+    "nationalShare": 0.04,
+    "bucketBreakdown": {
+      "4.NPA": 0.0221886
+    },
+    "productBreakdown": {
+      "UBL": 0.0221886
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0221886
+    },
+    "cityTier": "Tier C"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "SRIKAKULAM",
+    "posCrs": 0.0193,
+    "accountsCount": 1,
+    "stateShare": 0.59,
+    "nationalShare": 0.04,
+    "bucketBreakdown": {
+      "2.B2": 0.0192783
+    },
+    "productBreakdown": {
+      "EF": 0.0192783
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0192783
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "DEORIA",
+    "posCrs": 0.018,
+    "accountsCount": 1,
+    "stateShare": 0.19,
+    "nationalShare": 0.04,
+    "bucketBreakdown": {
+      "2.B2": 0.0179696
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0179696
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0179696
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "MORADABAD",
+    "posCrs": 0.0162,
+    "accountsCount": 23,
+    "stateShare": 0.17,
+    "nationalShare": 0.03,
+    "bucketBreakdown": {
+      "4.NPA": 0.0161954999999999
+    },
+    "productBreakdown": {
+      "EF": 0.0161954999999999
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0161954999999999
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "KADAPA",
+    "posCrs": 0.0115,
+    "accountsCount": 1,
+    "stateShare": 0.35,
+    "nationalShare": 0.02,
+    "bucketBreakdown": {
+      "4.NPA": 0.0115228
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0115228
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0115228
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "GUNA",
+    "posCrs": 0.0092,
+    "accountsCount": 3,
+    "stateShare": 81.94,
+    "nationalShare": 0.02,
+    "bucketBreakdown": {
+      "1.B1": 0.0091784
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0091784
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0091784
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Gujarat",
+    "district": "SURAT",
+    "posCrs": 0.0086,
+    "accountsCount": 1,
+    "stateShare": 1.12,
+    "nationalShare": 0.02,
+    "bucketBreakdown": {
+      "1.B1": 0.0085871
+    },
+    "productBreakdown": {
+      "UCL": 0.0085871
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0085871
+    },
+    "cityTier": "Tier B"
+  },
+  {
+    "state": "Tripura",
+    "district": "WEST TRIPURA",
+    "posCrs": 0.0069,
+    "accountsCount": 1,
+    "stateShare": 100,
+    "nationalShare": 0.01,
+    "bucketBreakdown": {
+      "1.B1": 0.0069189
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0069189
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0069189
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "GONDA",
+    "posCrs": 0.004,
+    "accountsCount": 1,
+    "stateShare": 0.04,
+    "nationalShare": 0.01,
+    "bucketBreakdown": {
+      "4.NPA": 0.0039666
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.0039666
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0039666
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "TIRUPPUR",
+    "posCrs": 0.0021,
+    "accountsCount": 1,
+    "stateShare": 0.08,
+    "nationalShare": 0,
+    "bucketBreakdown": {
+      "1.B1": 0.002107
+    },
+    "productBreakdown": {
+      "SHAKTI": 0.002107
+    },
+    "allocationBreakdown": {
+      "Call_Center": 0.002107
+    },
+    "cityTier": null
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "BHOPAL",
+    "posCrs": 0.002,
+    "accountsCount": 1,
+    "stateShare": 18.06,
+    "nationalShare": 0,
+    "bucketBreakdown": {
+      "4.NPA": 0.0020236
+    },
+    "productBreakdown": {
+      "UBL": 0.0020236
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0020236
+    },
+    "cityTier": "Tier B"
+  }
+]

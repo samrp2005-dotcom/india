@@ -1,0 +1,1042 @@
+{
+  "Maharashtra": {
+    "state": "Maharashtra",
+    "posCrs": 12.4327,
+    "portfolioShare": 24.49,
+    "accountsCount": 110,
+    "writeOffAmt": 0.0035,
+    "aumOnBook": 8.8965,
+    "aumOffBook": 3.5362,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 6.7232,
+        "count": 81,
+        "share": 54.08
+      },
+      "2.B2": {
+        "posCrs": 0.0879,
+        "count": 1,
+        "share": 0.71
+      },
+      "4.NPA": {
+        "posCrs": 5.6216,
+        "count": 28,
+        "share": 45.22
+      }
+    },
+    "delinquentShare": 45.92,
+    "npaShare": 45.22,
+    "b1Share": 54.08,
+    "productBreakdown": {
+      "UCL": {
+        "posCrs": 0.0733055999999999,
+        "accounts": 3
+      },
+      "HL": {
+        "posCrs": 5.659794399999999,
+        "accounts": 76
+      },
+      "MSME": {
+        "posCrs": 6.6345656,
+        "accounts": 26
+      },
+      "PL": {
+        "posCrs": 0.0356222,
+        "accounts": 3
+      },
+      "UBL": {
+        "posCrs": 0.0259118,
+        "accounts": 1
+      },
+      "EF": {
+        "posCrs": 0.0035031,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 12.403287800000001,
+      "Call_Center": 0.0259118,
+      "Field_Referral": 0.0035031
+    },
+    "dispositionBreakdown": {
+      "unallocated": 6.4264211,
+      "Call_Center": 0.29679269999999996,
+      "Field_Referral": 5.709488899999998
+    },
+    "cityTierBreakdown": {
+      "Tier B": 0.2820049999999989,
+      "Tier D": 1.9060693999999998,
+      "Tier A": 9.686909,
+      "Tier C": 0.5265567,
+      "Tier E": 0.0276595,
+      "Unclassified": 0.0035031
+    },
+    "districtsCount": 8,
+    "salesDisbAmount": 1481694,
+    "salesDisbCount": 5,
+    "salesSanctionedAmount": 3435000,
+    "salesLoginAmount": 18400000,
+    "salesAvgYield": 13.49,
+    "branchesCount": 13
+  },
+  "Karnataka": {
+    "state": "Karnataka",
+    "posCrs": 6.488,
+    "portfolioShare": 12.78,
+    "accountsCount": 67,
+    "writeOffAmt": 0.1071,
+    "aumOnBook": 6.488,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 6.3809,
+        "count": 63,
+        "share": 98.35
+      },
+      "4.NPA": {
+        "posCrs": 0.1071,
+        "count": 4,
+        "share": 1.65
+      }
+    },
+    "delinquentShare": 1.65,
+    "npaShare": 1.65,
+    "b1Share": 98.35,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.6821294999999999,
+        "accounts": 28
+      },
+      "MSME": {
+        "posCrs": 4.8215711,
+        "accounts": 30
+      },
+      "HL": {
+        "posCrs": 0.9640796,
+        "accounts": 7
+      },
+      "EF": {
+        "posCrs": 0.0202519,
+        "accounts": 2
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 6.3809436999999996,
+      "Field_Referral": 0.1070884
+    },
+    "dispositionBreakdown": {
+      "unallocated": 6.0126121999999995,
+      "Field_Referral": 0.13011699999999998,
+      "Self_Cure": 0.3453029
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.7023813999999999,
+      "Tier A": 5.1545984,
+      "Tier E": 0.5957481,
+      "Tier C": 0.0353042
+    },
+    "districtsCount": 3,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 11
+  },
+  "Delhi NCR": {
+    "state": "Delhi NCR",
+    "posCrs": 13.698,
+    "portfolioShare": 26.98,
+    "accountsCount": 82,
+    "writeOffAmt": 0,
+    "aumOnBook": 12.4918,
+    "aumOffBook": 1.2062,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 10.4316,
+        "count": 70,
+        "share": 76.15
+      },
+      "4.NPA": {
+        "posCrs": 3.2664,
+        "count": 12,
+        "share": 23.85
+      }
+    },
+    "delinquentShare": 23.85,
+    "npaShare": 23.85,
+    "b1Share": 76.15,
+    "productBreakdown": {
+      "HL": {
+        "posCrs": 13.35769619999999,
+        "accounts": 69
+      },
+      "PL": {
+        "posCrs": 0.0098417,
+        "accounts": 1
+      },
+      "UCL": {
+        "posCrs": 0.0282331,
+        "accounts": 1
+      },
+      "EF": {
+        "posCrs": 0.125036,
+        "accounts": 8
+      },
+      "SHAKTI": {
+        "posCrs": 0.0351555,
+        "accounts": 2
+      },
+      "MSME": {
+        "posCrs": 0.1420544,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 13.669783799999989,
+      "Strategic_Allocation": 0.0282331
+    },
+    "dispositionBreakdown": {
+      "unallocated": 10.261325,
+      "Strategic_Allocation": 0.0282331,
+      "Agency_Referral": 3.26640439999999,
+      "Call_Center": 0.1420544
+    },
+    "cityTierBreakdown": {
+      "Tier A": 13.39577099999999,
+      "Unclassified": 0.16019150000000001,
+      "Tier C": 0.1420544
+    },
+    "districtsCount": 7,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 0
+  },
+  "Tamil Nadu": {
+    "state": "Tamil Nadu",
+    "posCrs": 2.5431,
+    "portfolioShare": 5.01,
+    "accountsCount": 23,
+    "writeOffAmt": 0.0222,
+    "aumOnBook": 0.9261,
+    "aumOffBook": 1.617,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 2.469,
+        "count": 21,
+        "share": 97.09
+      },
+      "4.Opening_NPA": {
+        "posCrs": 0.0519,
+        "count": 1,
+        "share": 2.04
+      },
+      "4.NPA": {
+        "posCrs": 0.0222,
+        "count": 1,
+        "share": 0.87
+      }
+    },
+    "delinquentShare": 2.91,
+    "npaShare": 2.91,
+    "b1Share": 97.09,
+    "productBreakdown": {
+      "HL": {
+        "posCrs": 0.9655328000000001,
+        "accounts": 9
+      },
+      "UCL": {
+        "posCrs": 0.3022038,
+        "accounts": 10
+      },
+      "SHAKTI": {
+        "posCrs": 0.002107,
+        "accounts": 1
+      },
+      "MSME": {
+        "posCrs": 1.2511125,
+        "accounts": 2
+      },
+      "UBL": {
+        "posCrs": 0.0221886,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 2.5188490999999997,
+      "Call_Center": 0.002107,
+      "Field_Referral": 0.0221886
+    },
+    "dispositionBreakdown": {
+      "Call_Center": 0.0660539,
+      "unallocated": 2.4029787,
+      "Field_Referral": 0.0741121
+    },
+    "cityTierBreakdown": {
+      "Tier C": 0.39021989999999995,
+      "Tier D": 1.2230441,
+      "Unclassified": 0.002107,
+      "Tier E": 0.0519235,
+      "Tier B": 0.8758502
+    },
+    "districtsCount": 7,
+    "salesDisbAmount": 450000,
+    "salesDisbCount": 1,
+    "salesSanctionedAmount": 551642,
+    "salesLoginAmount": 600000,
+    "salesAvgYield": 14.55,
+    "branchesCount": 10
+  },
+  "Telangana": {
+    "state": "Telangana",
+    "posCrs": 2.8099,
+    "portfolioShare": 5.53,
+    "accountsCount": 75,
+    "writeOffAmt": 0.144,
+    "aumOnBook": 1.5729,
+    "aumOffBook": 1.237,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 2.5325,
+        "count": 44,
+        "share": 90.13
+      },
+      "4.NPA": {
+        "posCrs": 0.1373,
+        "count": 29,
+        "share": 4.89
+      },
+      "2.B2": {
+        "posCrs": 0.088,
+        "count": 1,
+        "share": 3.13
+      },
+      "3.B3": {
+        "posCrs": 0.0521,
+        "count": 1,
+        "share": 1.85
+      }
+    },
+    "delinquentShare": 9.87,
+    "npaShare": 4.89,
+    "b1Share": 90.13,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.627470599999999,
+        "accounts": 37
+      },
+      "HL": {
+        "posCrs": 1.7004872999999998,
+        "accounts": 5
+      },
+      "EF": {
+        "posCrs": 0.1372716,
+        "accounts": 29
+      },
+      "MSME": {
+        "posCrs": 0.31801130000000005,
+        "accounts": 3
+      },
+      "UCL": {
+        "posCrs": 0.0266651,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 2.672634299999999,
+      "Field_Referral": 0.1372716
+    },
+    "dispositionBreakdown": {
+      "unallocated": 2.266611799999999,
+      "Field_Referral": 0.18937120000000002,
+      "Agency_Referral": 0.0880112,
+      "Call_Center": 0.26591170000000003
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.7647421999999989,
+      "Tier E": 0.238,
+      "Tier A": 1.2342464999999998,
+      "Tier D": 0.2925768,
+      "Tier C": 0.2803404
+    },
+    "districtsCount": 7,
+    "salesDisbAmount": 289874,
+    "salesDisbCount": 4,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 2500000,
+    "salesAvgYield": 12.77,
+    "branchesCount": 4
+  },
+  "Uttar Pradesh": {
+    "state": "Uttar Pradesh",
+    "posCrs": 0.7867,
+    "portfolioShare": 1.55,
+    "accountsCount": 38,
+    "writeOffAmt": 0.1688,
+    "aumOnBook": 0.4287,
+    "aumOffBook": 0.3579,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.6008,
+        "count": 10,
+        "share": 76.37
+      },
+      "2.B2": {
+        "posCrs": 0.018,
+        "count": 1,
+        "share": 2.28
+      },
+      "4.NPA": {
+        "posCrs": 0.1679,
+        "count": 27,
+        "share": 21.35
+      }
+    },
+    "delinquentShare": 23.63,
+    "npaShare": 21.35,
+    "b1Share": 76.37,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.06428009999999999,
+        "accounts": 4
+      },
+      "UCL": {
+        "posCrs": 0.0468679,
+        "accounts": 1
+      },
+      "EF": {
+        "posCrs": 0.0161954999999999,
+        "accounts": 23
+      },
+      "MSME": {
+        "posCrs": 0.113839,
+        "accounts": 1
+      },
+      "HL": {
+        "posCrs": 0.397700199999999,
+        "accounts": 6
+      },
+      "UBL": {
+        "posCrs": 0.1477874,
+        "accounts": 3
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.553883099999999,
+      "Call-Agency": 0.0468679,
+      "Field_Referral": 0.18591909999999992
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.440044099999999,
+      "Call_Center": 0.16070689999999999,
+      "Field_Referral": 0.18591909999999992
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.0804755999999999,
+      "Tier B": 0.0468679,
+      "Tier D": 0.113839,
+      "Tier C": 0.5454875999999991
+    },
+    "districtsCount": 8,
+    "salesDisbAmount": 922799,
+    "salesDisbCount": 3,
+    "salesSanctionedAmount": 5889045,
+    "salesLoginAmount": 13100000,
+    "salesAvgYield": 14.27,
+    "branchesCount": 9
+  },
+  "Kerala": {
+    "state": "Kerala",
+    "posCrs": 0.0877,
+    "portfolioShare": 0.17,
+    "accountsCount": 3,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.0877,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "4.NPA": {
+        "posCrs": 0.0877,
+        "count": 3,
+        "share": 100
+      }
+    },
+    "delinquentShare": 100,
+    "npaShare": 100,
+    "b1Share": 0,
+    "productBreakdown": {
+      "MSME": {
+        "posCrs": 0.0876885,
+        "accounts": 3
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0876885
+    },
+    "dispositionBreakdown": {
+      "Field_Referral": 0.0876885
+    },
+    "cityTierBreakdown": {
+      "Tier B": 0.0876885
+    },
+    "districtsCount": 1,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 1
+  },
+  "Rajasthan": {
+    "state": "Rajasthan",
+    "posCrs": 1.2117,
+    "portfolioShare": 2.39,
+    "accountsCount": 16,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.7346,
+    "aumOffBook": 0.4771,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 1.2117,
+        "count": 16,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "MSME": {
+        "posCrs": 0.1079342,
+        "accounts": 1
+      },
+      "HL": {
+        "posCrs": 1.103769899999999,
+        "accounts": 15
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.211704099999999
+    },
+    "dispositionBreakdown": {
+      "unallocated": 1.211704099999999
+    },
+    "cityTierBreakdown": {
+      "Tier C": 0.752388999999999,
+      "Tier D": 0.4593151
+    },
+    "districtsCount": 3,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 440000,
+    "salesLoginAmount": 6425000,
+    "salesAvgYield": 0,
+    "branchesCount": 5
+  },
+  "Andhra Pradesh": {
+    "state": "Andhra Pradesh",
+    "posCrs": 3.2648,
+    "portfolioShare": 6.43,
+    "accountsCount": 16,
+    "writeOffAmt": 0,
+    "aumOnBook": 3.2533,
+    "aumOffBook": 0.0115,
+    "bucketBreakdown": {
+      "4.NPA": {
+        "posCrs": 0.0115,
+        "count": 1,
+        "share": 0.35
+      },
+      "1.B1": {
+        "posCrs": 3.234,
+        "count": 14,
+        "share": 99.06
+      },
+      "2.B2": {
+        "posCrs": 0.0193,
+        "count": 1,
+        "share": 0.59
+      }
+    },
+    "delinquentShare": 0.94,
+    "npaShare": 0.35,
+    "b1Share": 99.06,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.0115228,
+        "accounts": 1
+      },
+      "HL": {
+        "posCrs": 1.5418848,
+        "accounts": 3
+      },
+      "UBL": {
+        "posCrs": 1.6297902,
+        "accounts": 8
+      },
+      "EF": {
+        "posCrs": 0.0816391,
+        "accounts": 4
+      }
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0308011,
+      "unallocated": 3.2340358
+    },
+    "dispositionBreakdown": {
+      "Field_Referral": 0.0308011,
+      "unallocated": 3.2340358
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.0931619,
+      "Tier C": 1.5418848,
+      "Tier B": 1.6297902
+    },
+    "districtsCount": 5,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 7800000,
+    "salesAvgYield": 0,
+    "branchesCount": 4
+  },
+  "Punjab": {
+    "state": "Punjab",
+    "posCrs": 1.1339,
+    "portfolioShare": 2.23,
+    "accountsCount": 25,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.8768,
+    "aumOffBook": 0.2571,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 1.1339,
+        "count": 25,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "HL": {
+        "posCrs": 0.7879857,
+        "accounts": 11
+      },
+      "PL": {
+        "posCrs": 0.2646388,
+        "accounts": 13
+      },
+      "UBL": {
+        "posCrs": 0.0812578,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 1.0526245,
+      "Strategic_Allocation": 0.0812578
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.9449259999999999,
+      "Call_Center": 0.1076985,
+      "Strategic_Allocation": 0.0812578
+    },
+    "cityTierBreakdown": {
+      "Tier C": 0.8553739000000001,
+      "Tier D": 0.218818,
+      "Tier B": 0.0596904
+    },
+    "districtsCount": 5,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 21100000,
+    "salesAvgYield": 0,
+    "branchesCount": 4
+  },
+  "Madhya Pradesh": {
+    "state": "Madhya Pradesh",
+    "posCrs": 0.0112,
+    "portfolioShare": 0.02,
+    "accountsCount": 4,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.0112,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.0092,
+        "count": 3,
+        "share": 81.94
+      },
+      "4.NPA": {
+        "posCrs": 0.002,
+        "count": 1,
+        "share": 18.06
+      }
+    },
+    "delinquentShare": 18.06,
+    "npaShare": 18.06,
+    "b1Share": 81.94,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.0091784,
+        "accounts": 3
+      },
+      "UBL": {
+        "posCrs": 0.0020236,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0091784,
+      "Field_Referral": 0.0020236
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.0091784,
+      "Field_Referral": 0.0020236
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.0091784,
+      "Tier B": 0.0020236
+    },
+    "districtsCount": 2,
+    "salesDisbAmount": 3164196,
+    "salesDisbCount": 12,
+    "salesSanctionedAmount": 6830000,
+    "salesLoginAmount": 15100000,
+    "salesAvgYield": 15.97,
+    "branchesCount": 6
+  },
+  "Tripura": {
+    "state": "Tripura",
+    "posCrs": 0.0069,
+    "portfolioShare": 0.01,
+    "accountsCount": 1,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.0069,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.0069,
+        "count": 1,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.0069189,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0069189
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.0069189
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.0069189
+    },
+    "districtsCount": 1,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 0
+  },
+  "Chhattisgarh": {
+    "state": "Chhattisgarh",
+    "posCrs": 0.064,
+    "portfolioShare": 0.13,
+    "accountsCount": 5,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.064,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.064,
+        "count": 5,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.0640368,
+        "accounts": 5
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0640368
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.0640368
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.0640368
+    },
+    "districtsCount": 1,
+    "salesDisbAmount": 1028059,
+    "salesDisbCount": 2,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 14,
+    "branchesCount": 2
+  },
+  "Himachal Pradesh": {
+    "state": "Himachal Pradesh",
+    "posCrs": 0.0481,
+    "portfolioShare": 0.09,
+    "accountsCount": 3,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.0481,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.0481,
+        "count": 3,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "SHAKTI": {
+        "posCrs": 0.0480691,
+        "accounts": 3
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.0480691
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.0480691
+    },
+    "cityTierBreakdown": {
+      "Unclassified": 0.0480691
+    },
+    "districtsCount": 1,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 1
+  },
+  "Gujarat": {
+    "state": "Gujarat",
+    "posCrs": 0.7655,
+    "portfolioShare": 1.51,
+    "accountsCount": 17,
+    "writeOffAmt": 0.0522,
+    "aumOnBook": 0.5371,
+    "aumOffBook": 0.2284,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.7134,
+        "count": 16,
+        "share": 93.19
+      },
+      "4.NPA": {
+        "posCrs": 0.0522,
+        "count": 1,
+        "share": 6.81
+      }
+    },
+    "delinquentShare": 6.81,
+    "npaShare": 6.81,
+    "b1Share": 93.19,
+    "productBreakdown": {
+      "UCL": {
+        "posCrs": 0.0085871,
+        "accounts": 1
+      },
+      "SHAKTI": {
+        "posCrs": 0.4509438,
+        "accounts": 13
+      },
+      "UBL": {
+        "posCrs": 0.0521552,
+        "accounts": 1
+      },
+      "MSME": {
+        "posCrs": 0.2538202,
+        "accounts": 2
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 0.7133511,
+      "Field_Referral": 0.0521552
+    },
+    "dispositionBreakdown": {
+      "unallocated": 0.7133511,
+      "Field_Referral": 0.0521552
+    },
+    "cityTierBreakdown": {
+      "Tier B": 0.0085871,
+      "Unclassified": 0.4509438,
+      "Tier D": 0.3059754
+    },
+    "districtsCount": 4,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 3
+  },
+  "Haryana": {
+    "state": "Haryana",
+    "posCrs": 0.155,
+    "portfolioShare": 0.31,
+    "accountsCount": 3,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.155,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 0.155,
+        "count": 3,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "UBL": {
+        "posCrs": 0.1303361,
+        "accounts": 2
+      },
+      "UCL": {
+        "posCrs": 0.0246801,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "Call-Agency": 0.0235482,
+      "Call_Center": 0.0246801,
+      "Strategic_Allocation": 0.1067879
+    },
+    "dispositionBreakdown": {
+      "Call_Center": 0.0482283,
+      "Strategic_Allocation": 0.1067879
+    },
+    "cityTierBreakdown": {
+      "Tier D": 0.1550162
+    },
+    "districtsCount": 3,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 1500000,
+    "salesAvgYield": 0,
+    "branchesCount": 3
+  },
+  "Jharkhand": {
+    "state": "Jharkhand",
+    "posCrs": 0.3202,
+    "portfolioShare": 0.63,
+    "accountsCount": 6,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.3202,
+    "aumOffBook": 0,
+    "bucketBreakdown": {
+      "3.B3": {
+        "posCrs": 0.0504,
+        "count": 1,
+        "share": 15.74
+      },
+      "1.B1": {
+        "posCrs": 0.2698,
+        "count": 5,
+        "share": 84.26
+      }
+    },
+    "delinquentShare": 15.74,
+    "npaShare": 0,
+    "b1Share": 84.26,
+    "productBreakdown": {
+      "PL": {
+        "posCrs": 0.265600999999999,
+        "accounts": 5
+      },
+      "SHAKTI": {
+        "posCrs": 0.0546307,
+        "accounts": 1
+      }
+    },
+    "allocationBreakdown": {
+      "Field_Referral": 0.0504096,
+      "unallocated": 0.0546307,
+      "Call-Agency": 0.215191399999999
+    },
+    "dispositionBreakdown": {
+      "Field_Referral": 0.0504096,
+      "unallocated": 0.0546307,
+      "Call_Center": 0.215191399999999
+    },
+    "cityTierBreakdown": {
+      "Tier C": 0.0504096,
+      "Unclassified": 0.0546307,
+      "Tier D": 0.215191399999999
+    },
+    "districtsCount": 3,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 0,
+    "salesLoginAmount": 0,
+    "salesAvgYield": 0,
+    "branchesCount": 1
+  },
+  "Uttarakhand": {
+    "state": "Uttarakhand",
+    "posCrs": 4.9466,
+    "portfolioShare": 9.74,
+    "accountsCount": 67,
+    "writeOffAmt": 0,
+    "aumOnBook": 0.805,
+    "aumOffBook": 4.1416,
+    "bucketBreakdown": {
+      "1.B1": {
+        "posCrs": 4.9466,
+        "count": 67,
+        "share": 100
+      }
+    },
+    "delinquentShare": 0,
+    "npaShare": 0,
+    "b1Share": 100,
+    "productBreakdown": {
+      "HL": {
+        "posCrs": 4.9466311,
+        "accounts": 67
+      }
+    },
+    "allocationBreakdown": {
+      "unallocated": 4.9466311
+    },
+    "dispositionBreakdown": {
+      "unallocated": 4.9466311
+    },
+    "cityTierBreakdown": {
+      "Tier B": 4.9466311
+    },
+    "districtsCount": 1,
+    "salesDisbAmount": 0,
+    "salesDisbCount": 0,
+    "salesSanctionedAmount": 2400000,
+    "salesLoginAmount": 3000000,
+    "salesAvgYield": 0,
+    "branchesCount": 1
+  }
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "name": "HL",
+    "value": 31.426,
+    "accounts": 268,
+    "share": 61.9,
+    "children": [
+      {
+        "name": "AF",
+        "value": 11.563,
+        "share": 36.8
+      },
+      {
+        "name": "BH",
+        "value": 1.797,
+        "share": 5.7
+      },
+      {
+        "name": "HL",
+        "value": 15.354,
+        "share": 48.9
+      },
+      {
+        "name": "MA",
+        "value": 2.711,
+        "share": 8.6
+      }
+    ]
+  },
+  {
+    "name": "MSME",
+    "value": 13.731,
+    "accounts": 69,
+    "share": 27,
+    "children": [
+      {
+        "name": "LAP",
+        "value": 7.957,
+        "share": 57.9
+      },
+      {
+        "name": "SBL",
+        "value": 5.456,
+        "share": 39.7
+      },
+      {
+        "name": "MLAP",
+        "value": 0.318,
+        "share": 2.3
+      }
+    ]
+  },
+  {
+    "name": "UBL",
+    "value": 2.091,
+    "accounts": 18,
+    "share": 4.1,
+    "children": [
+      {
+        "name": "UBL",
+        "value": 2.091,
+        "share": 100
+      }
+    ]
+  },
+  {
+    "name": "SHAKTI",
+    "value": 2.056,
+    "accounts": 99,
+    "share": 4.1,
+    "children": [
+      {
+        "name": "XBL",
+        "value": 1.101,
+        "share": 53.5
+      },
+      {
+        "name": "XBLEFCLS",
+        "value": 0.751,
+        "share": 36.5
+      },
+      {
+        "name": "XPLEFLIV",
+        "value": 0.087,
+        "share": 4.2
+      },
+      {
+        "name": "XBLBSLIV",
+        "value": 0.042,
+        "share": 2.1
+      },
+      {
+        "name": "XPL",
+        "value": 0.039,
+        "share": 1.9
+      },
+      {
+        "name": "XPLEFCLS",
+        "value": 0.03,
+        "share": 1.5
+      },
+      {
+        "name": "DTCPL",
+        "value": 0.007,
+        "share": 0.3
+      }
+    ]
+  },
+  {
+    "name": "PL",
+    "value": 0.576,
+    "accounts": 22,
+    "share": 1.1,
+    "children": [
+      {
+        "name": "PL",
+        "value": 0.576,
+        "share": 100
+      }
+    ]
+  },
+  {
+    "name": "UCL",
+    "value": 0.511,
+    "accounts": 18,
+    "share": 1,
+    "children": [
+      {
+        "name": "CAR DEKHO",
+        "value": 0.361,
+        "share": 70.7
+      },
+      {
+        "name": "SCUCL",
+        "value": 0.071,
+        "share": 13.9
+      },
+      {
+        "name": "UCLOPEN",
+        "value": 0.079,
+        "share": 15.5
+      }
+    ]
+  },
+  {
+    "name": "EF",
+    "value": 0.384,
+    "accounts": 67,
+    "share": 0.8,
+    "children": [
+      {
+        "name": "PAYTAIL",
+        "value": 0.035,
+        "share": 9.1
+      },
+      {
+        "name": "ONSITEGO LDP",
+        "value": 0.016,
+        "share": 4.2
+      },
+      {
+        "name": "PHONE PE",
+        "value": 0.207,
+        "share": 53.8
+      },
+      {
+        "name": "EARLY SALARY LTPL",
+        "value": 0.126,
+        "share": 32.8
+      }
+    ]
+  }
+]
