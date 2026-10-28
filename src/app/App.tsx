@@ -8,11 +8,22 @@ import { DataQualityModal } from '../components/layout/DataQualityModal';
 import { Compass, ShieldCheck, FileText, CheckCircle2 } from 'lucide-react';
 
 export const App: React.FC = () => {
-  const { activeTab, isLoading, error, loadData } = useAppStore();
+  const { activeTab, isLoading, error, loadData, theme } = useAppStore();
 
   useEffect(() => {
     loadData();
   }, [loadData]);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      root.setAttribute('data-theme', 'light');
+    }
+  }, [theme]);
 
   if (isLoading) {
     return (
@@ -40,7 +51,7 @@ export const App: React.FC = () => {
           <p className="text-xs text-text-secondary">{error}</p>
           <button
             onClick={() => loadData()}
-            className="px-4 py-2 rounded-lg bg-teal text-background text-xs font-bold shadow-glow"
+            className="px-4 py-2 rounded-lg bg-teal text-white text-xs font-bold shadow-glow"
           >
             Retry Data Ingestion
           </button>
@@ -50,7 +61,7 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background text-text-primary flex flex-col selection:bg-teal selection:text-background">
+    <div className="min-h-screen bg-background text-text-primary flex flex-col selection:bg-teal selection:text-white">
       {/* Top Header */}
       <Header />
 

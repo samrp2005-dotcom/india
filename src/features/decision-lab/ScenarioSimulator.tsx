@@ -165,7 +165,7 @@ export const ScenarioSimulator: React.FC = () => {
                     onClick={() => setImprovementRate(step)}
                     className={`p-2 rounded-lg text-center cursor-pointer transition-all border ${
                       isCurrent
-                        ? 'bg-teal text-background font-bold border-teal shadow-glow'
+                        ? 'bg-teal text-white font-bold border-teal shadow-glow'
                         : 'bg-surface/50 border-border hover:bg-surface-elevated text-text-secondary'
                     }`}
                   >

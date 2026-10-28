@@ -8,7 +8,9 @@ import {
   RotateCcw,
   Compass,
   FileSpreadsheet,
-  Info
+  Info,
+  Sun,
+  Moon
 } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -23,7 +25,9 @@ export const Header: React.FC = () => {
     searchQuery,
     setSearchQuery,
     setIsDataQualityOpen,
-    getActiveStateAggregates
+    getActiveStateAggregates,
+    theme,
+    toggleTheme
   } = useAppStore();
 
   const stateAggs = getActiveStateAggregates();
@@ -34,19 +38,19 @@ export const Header: React.FC = () => {
       <div className="max-w-[1800px] mx-auto flex flex-wrap items-center justify-between gap-3">
         {/* Brand identity */}
         <div className="flex items-center space-x-3.5">
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-teal-dark/30 to-teal/20 border border-teal/40 shadow-glow">
+          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 shadow-glow">
             <Compass className="w-5 h-5 text-teal animate-pulse-subtle" />
-            <div className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-teal shadow-glow"></div>
+            <div className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-coral shadow-glow-coral"></div>
           </div>
           <div>
             <div className="flex items-center space-x-2">
               <span className="font-extrabold tracking-wider text-text-bright text-lg leading-tight uppercase font-mono">
-                Lending<span className="text-teal">Pulse</span>
+                Lending<span className="text-coral">Pulse</span>
               </span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-teal/10 border border-teal/30 text-teal font-medium tracking-wide">
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 text-teal font-semibold tracking-wide">
                 v3.0 ATLAS
               </span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-accent-blue/10 border border-accent-blue/30 text-accent-blue font-medium tracking-wide hidden sm:inline-block">
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-orange-50 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-800 text-coral font-semibold tracking-wide hidden sm:inline-block">
                 KALEIDOSCOPE
               </span>
             </div>
@@ -62,7 +66,7 @@ export const Header: React.FC = () => {
             onClick={() => setActiveTab('india-pulse')}
             className={`flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${
               activeTab === 'india-pulse'
-                ? 'bg-teal text-background font-semibold shadow-glow'
+                ? 'bg-teal text-white font-semibold shadow-glow'
                 : 'text-text-secondary hover:text-text-primary hover:bg-surface-elevated'
             }`}
           >
@@ -74,14 +78,14 @@ export const Header: React.FC = () => {
             onClick={() => setActiveTab('hotspot-explorer')}
             className={`flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${
               activeTab === 'hotspot-explorer'
-                ? 'bg-teal text-background font-semibold shadow-glow'
+                ? 'bg-teal text-white font-semibold shadow-glow'
                 : 'text-text-secondary hover:text-text-primary hover:bg-surface-elevated'
             }`}
           >
             <Layers className="w-3.5 h-3.5" />
             <span>Hotspot Explorer</span>
             {selectedState && (
-              <span className="ml-1 px-1.5 py-0.2 rounded text-[10px] bg-background/20 font-mono">
+              <span className="ml-1 px-1.5 py-0.2 rounded text-[10px] bg-background/30 font-mono">
                 {selectedState}
               </span>
             )}
@@ -91,7 +95,7 @@ export const Header: React.FC = () => {
             onClick={() => setActiveTab('decision-lab')}
             className={`flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${
               activeTab === 'decision-lab'
-                ? 'bg-teal text-background font-semibold shadow-glow'
+                ? 'bg-teal text-white font-semibold shadow-glow'
                 : 'text-text-secondary hover:text-text-primary hover:bg-surface-elevated'
             }`}
           >
@@ -183,6 +187,25 @@ export const Header: React.FC = () => {
           >
             <ShieldCheck className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Audit Reconciled</span>
+          </button>
+
+          {/* Theme Mode Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg bg-surface-elevated hover:bg-surface-subtle text-text-secondary hover:text-text-primary transition-all border border-border"
+            title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} theme`}
+          >
+            {theme === 'light' ? (
+              <>
+                <Moon className="w-3.5 h-3.5 text-text-secondary" />
+                <span className="hidden sm:inline text-xs font-medium">Dark</span>
+              </>
+            ) : (
+              <>
+                <Sun className="w-3.5 h-3.5 text-status-b2" />
+                <span className="hidden sm:inline text-xs font-medium">Light</span>
+              </>
+            )}
           </button>
         </div>
       </div>

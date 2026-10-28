@@ -11,7 +11,8 @@ import {
   PrioritizationItem,
   DeterministicInsight,
   PortfolioOverview,
-  DataQualityReport
+  DataQualityReport,
+  ThemeMode
 } from '../types';
 
 interface HoveredGeographyInfo {
@@ -26,6 +27,11 @@ interface AppState {
   // Navigation
   activeTab: ActiveTab;
   setActiveTab: (tab: ActiveTab) => void;
+
+  // Theme mode
+  theme: ThemeMode;
+  setTheme: (theme: ThemeMode) => void;
+  toggleTheme: () => void;
 
   // Map settings
   selectedLayer: LayerType;
@@ -86,6 +92,21 @@ export const useAppStore = create<AppState>((set, get) => ({
   // Defaults
   activeTab: 'india-pulse',
   setActiveTab: (tab) => set({ activeTab: tab }),
+
+  theme: (typeof window !== 'undefined' && (localStorage.getItem('lp_theme') as ThemeMode)) || 'light',
+  setTheme: (theme) => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('lp_theme', theme);
+    }
+    set({ theme });
+  },
+  toggleTheme: () => {
+    const nextTheme = get().theme === 'light' ? 'dark' : 'light';
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('lp_theme', nextTheme);
+    }
+    set({ theme: nextTheme });
+  },
 
   selectedLayer: 'exposure',
   setSelectedLayer: (layer) => set({ selectedLayer: layer }),

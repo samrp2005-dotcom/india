@@ -79,37 +79,35 @@ export function getChoroplethColor(
   const ratio = Math.min(Math.max((value - minVal) / range, 0.05), 1);
 
   if (layer === 'exposure') {
-    // Teal scale for Collections Exposure
-    // from dark teal rgba(16, 68, 77, 0.7) to radiant cyan-teal #54D7C7
-    if (ratio < 0.2) return 'rgba(20, 60, 70, 0.75)';
-    if (ratio < 0.4) return 'rgba(28, 98, 105, 0.85)';
-    if (ratio < 0.6) return 'rgba(40, 145, 140, 0.9)';
-    if (ratio < 0.8) return 'rgba(65, 185, 175, 0.95)';
-    return '#54D7C7'; // Peak exposure
+    // Pure Blue scale for Collections Exposure
+    if (ratio < 0.2) return 'rgba(219, 234, 254, 0.85)';
+    if (ratio < 0.4) return 'rgba(147, 197, 253, 0.9)';
+    if (ratio < 0.6) return 'rgba(96, 165, 250, 0.95)';
+    if (ratio < 0.8) return 'rgba(37, 99, 235, 0.95)';
+    return '#1D4ED8'; // Peak exposure Royal Blue
   }
 
   if (layer === 'pressure') {
-    // Coral / Amber scale for Delinquency Pressure
-    // Low pressure = subdued slate, high = glowing coral
-    if (ratio < 0.2) return 'rgba(60, 75, 95, 0.7)';
-    if (ratio < 0.4) return 'rgba(234, 179, 8, 0.75)'; // Amber
-    if (ratio < 0.6) return 'rgba(249, 115, 22, 0.85)'; // Orange
-    if (ratio < 0.8) return 'rgba(244, 63, 94, 0.9)';  // Rose-red
-    return '#FF8A70'; // High Delinquency Coral
+    // Pure Orange scale for Delinquency Pressure
+    if (ratio < 0.2) return 'rgba(255, 237, 213, 0.85)';
+    if (ratio < 0.4) return 'rgba(254, 215, 170, 0.9)';
+    if (ratio < 0.6) return 'rgba(251, 146, 60, 0.95)';
+    if (ratio < 0.8) return 'rgba(234, 88, 12, 0.95)';
+    return '#C2410C'; // High Delinquency Burnt Orange
   }
 
   if (layer === 'sales') {
-    // Cobalt / Accent Blue scale for Lending Disbursements
-    if (ratio < 0.2) return 'rgba(25, 55, 95, 0.7)';
-    if (ratio < 0.4) return 'rgba(37, 99, 235, 0.8)';
-    if (ratio < 0.6) return 'rgba(59, 130, 246, 0.85)';
-    if (ratio < 0.8) return 'rgba(96, 165, 250, 0.9)';
-    return '#63A9F5';
+    // Cobalt Blue scale for Lending Disbursements
+    if (ratio < 0.2) return 'rgba(191, 219, 254, 0.85)';
+    if (ratio < 0.4) return 'rgba(147, 197, 253, 0.9)';
+    if (ratio < 0.6) return 'rgba(59, 130, 246, 0.95)';
+    if (ratio < 0.8) return 'rgba(37, 99, 235, 0.95)';
+    return '#1E40AF';
   }
 
-  // Allocation layer (Cyan-purple scale)
-  if (ratio < 0.25) return 'rgba(30, 50, 80, 0.7)';
-  if (ratio < 0.5) return 'rgba(14, 165, 233, 0.8)';
-  if (ratio < 0.75) return 'rgba(99, 102, 241, 0.85)';
-  return '#A78BFA';
+  // Allocation layer (Amber-Orange scale)
+  if (ratio < 0.25) return 'rgba(254, 243, 199, 0.85)';
+  if (ratio < 0.5) return 'rgba(253, 230, 138, 0.9)';
+  if (ratio < 0.75) return 'rgba(245, 158, 11, 0.95)';
+  return '#EA580C';
 }

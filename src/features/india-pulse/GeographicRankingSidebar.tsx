@@ -48,7 +48,7 @@ export const GeographicRankingSidebar: React.FC = () => {
             </div>
             <button
               onClick={() => setActiveTab('hotspot-explorer')}
-              className="flex items-center space-x-1 px-2.5 py-1 rounded-md bg-teal text-background text-xs font-bold shadow-glow hover:bg-teal-light transition-all"
+              className="flex items-center space-x-1 px-2.5 py-1 rounded-md bg-teal text-white text-xs font-bold shadow-glow hover:bg-teal-light transition-all"
             >
               <span>Explore Hotspot</span>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -105,7 +105,7 @@ export const GeographicRankingSidebar: React.FC = () => {
             <button
               onClick={() => setSortBy('exposure')}
               className={`px-2 py-0.5 rounded transition-colors ${
-                sortBy === 'exposure' ? 'bg-teal text-background font-bold' : 'text-text-muted hover:text-text-secondary'
+                sortBy === 'exposure' ? 'bg-teal text-white font-bold' : 'text-text-muted hover:text-text-secondary'
               }`}
             >
               POS
@@ -113,7 +113,7 @@ export const GeographicRankingSidebar: React.FC = () => {
             <button
               onClick={() => setSortBy('pressure')}
               className={`px-2 py-0.5 rounded transition-colors ${
-                sortBy === 'pressure' ? 'bg-coral text-background font-bold' : 'text-text-muted hover:text-text-secondary'
+                sortBy === 'pressure' ? 'bg-coral text-white font-bold' : 'text-text-muted hover:text-text-secondary'
               }`}
             >
               Delinq %
@@ -121,7 +121,7 @@ export const GeographicRankingSidebar: React.FC = () => {
             <button
               onClick={() => setSortBy('sales')}
               className={`px-2 py-0.5 rounded transition-colors ${
-                sortBy === 'sales' ? 'bg-accent-blue text-background font-bold' : 'text-text-muted hover:text-text-secondary'
+                sortBy === 'sales' ? 'bg-accent-blue text-white font-bold' : 'text-text-muted hover:text-text-secondary'
               }`}
             >
               Sales

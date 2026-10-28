@@ -4,7 +4,8 @@ import { useAppStore } from '../../store/useAppStore';
 import { AlertCircle, GitFork } from 'lucide-react';
 
 export const ExposureSankey: React.FC = () => {
-  const { sankeyData, selectedState } = useAppStore();
+  const { sankeyData, selectedState, theme } = useAppStore();
+  const isLight = theme === 'light';
 
   if (!sankeyData || !sankeyData.nodes || sankeyData.nodes.length === 0) {
     return (
@@ -21,28 +22,32 @@ export const ExposureSankey: React.FC = () => {
       )
     : sankeyData.links;
 
+  const primaryColor = isLight ? '#1D4ED8' : '#60A5FA';
+  const mutedColor = isLight ? '#64748B' : '#94A3B8';
+
   const option = {
     backgroundColor: 'transparent',
     tooltip: {
       trigger: 'item',
       triggerOn: 'mousemove',
-      backgroundColor: 'rgba(16, 31, 48, 0.95)',
-      borderColor: '#54D7C7',
+      backgroundColor: isLight ? 'rgba(255, 255, 255, 0.98)' : 'rgba(16, 31, 48, 0.95)',
+      borderColor: primaryColor,
       borderWidth: 1,
-      textStyle: { color: '#EDF5F7', fontSize: 12 },
+      extraCssText: isLight ? 'box-shadow: 0 8px 24px -2px rgba(0,0,0,0.1); border-radius: 8px;' : '',
+      textStyle: { color: isLight ? '#0F172A' : '#EDF5F7', fontSize: 12 },
       formatter: (params: any) => {
         if (params.dataType === 'edge') {
           return `
             <div style="font-family: sans-serif; padding: 4px;">
-              <span style="color: #91A9BA;">Flow Pathway:</span><br/>
+              <span style="color: ${mutedColor};">Flow Pathway:</span><br/>
               <b>${params.data.source}</b> → <b>${params.data.target}</b><br/>
-              Exposure: <b style="color: #54D7C7;">₹${Number(params.data.value).toFixed(2)} Cr</b>
+              Exposure: <b style="color: ${primaryColor};">₹${Number(params.data.value).toFixed(2)} Cr</b>
             </div>
           `;
         }
         return `
           <div style="font-family: sans-serif; padding: 4px;">
-            <b style="color: #54D7C7;">${params.name}</b><br/>
+            <b style="color: ${primaryColor};">${params.name}</b><br/>
             Category: ${params.data?.category || 'Node'}
           </div>
         `;
@@ -62,17 +67,17 @@ export const ExposureSankey: React.FC = () => {
         lineStyle: {
           color: 'gradient',
           curveness: 0.5,
-          opacity: 0.45
+          opacity: isLight ? 0.55 : 0.45
         },
         label: {
-          color: '#EDF5F7',
+          color: isLight ? '#0F172A' : '#EDF5F7',
           fontFamily: 'sans-serif',
           fontSize: 10,
           fontWeight: 600
         },
         itemStyle: {
           borderWidth: 1,
-          borderColor: '#101F30'
+          borderColor: isLight ? '#E2E8F0' : '#101F30'
         }
       }
     ]

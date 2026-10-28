@@ -4,26 +4,30 @@ import { useAppStore } from '../../store/useAppStore';
 import { formatPosCrs, formatPercent } from '../../lib/formatters';
 
 export const ExposureTreemap: React.FC = () => {
-  const { productTreemap, selectedProductCategory, setSelectedProductCategory } = useAppStore();
+  const { productTreemap, selectedProductCategory, setSelectedProductCategory, theme } = useAppStore();
+  const isLight = theme === 'light';
 
   const option = {
     backgroundColor: 'transparent',
     tooltip: {
-      backgroundColor: 'rgba(16, 31, 48, 0.95)',
-      borderColor: '#54D7C7',
+      backgroundColor: isLight ? 'rgba(255, 255, 255, 0.98)' : 'rgba(16, 31, 48, 0.95)',
+      borderColor: isLight ? '#0D9488' : '#54D7C7',
       borderWidth: 1,
-      textStyle: { color: '#EDF5F7', fontSize: 12 },
+      extraCssText: isLight ? 'box-shadow: 0 8px 24px -2px rgba(0,0,0,0.1); border-radius: 8px;' : '',
+      textStyle: { color: isLight ? '#0F172A' : '#EDF5F7', fontSize: 12 },
       formatter: (params: any) => {
         const val = params.value;
         const name = params.name;
         const data = params.data;
+        const primaryColor = isLight ? '#1D4ED8' : '#60A5FA';
+        const mutedColor = isLight ? '#64748B' : '#94A3B8';
         return `
           <div style="font-family: sans-serif; padding: 4px;">
-            <div style="font-weight: 700; color: #54D7C7; font-size: 13px;">${name}</div>
+            <div style="font-weight: 700; color: ${primaryColor}; font-size: 13px;">${name}</div>
             <div style="margin-top: 4px;">Exposure: <b>₹${Number(val).toFixed(2)} Cr</b></div>
             ${data?.accounts ? `<div>Accounts: <b>${data.accounts}</b></div>` : ''}
             ${data?.share ? `<div>Portfolio Share: <b>${data.share}%</b></div>` : ''}
-            <div style="font-size: 10px; color: #91A9BA; margin-top: 4px;">* Click block to filter portfolio views</div>
+            <div style="font-size: 10px; color: ${mutedColor}; margin-top: 4px;">* Click block to filter portfolio views</div>
           </div>
         `;
       }
@@ -39,36 +43,38 @@ export const ExposureTreemap: React.FC = () => {
           show: true,
           bottom: 0,
           itemStyle: {
-            color: '#101F30',
-            borderColor: '#1E354D',
-            textStyle: { color: '#54D7C7', fontSize: 11 }
+            color: isLight ? '#F1F5F9' : '#1C2541',
+            borderColor: isLight ? '#CBD5E1' : '#2E4068',
+            textStyle: { color: isLight ? '#1D4ED8' : '#60A5FA', fontSize: 11 }
           }
         },
         label: {
           show: true,
           formatter: '{b}\n₹{c} Cr',
           fontSize: 11,
-          color: '#EDF5F7',
+          color: '#FFFFFF',
           fontWeight: 600
         },
         itemStyle: {
-          borderColor: '#08131F',
+          borderColor: isLight ? '#FFFFFF' : '#0B132B',
           borderWidth: 2,
           gapWidth: 2
         },
         levels: [
           {
             itemStyle: {
-              borderColor: '#08131F',
+              borderColor: isLight ? '#FFFFFF' : '#0B132B',
               borderWidth: 3,
               gapWidth: 3
             }
           },
           {
-            color: ['#1C5D64', '#1E4B6E', '#2A4365', '#245E56', '#4A3B69', '#5E3B4D'],
+            color: isLight
+              ? ['#1D4ED8', '#EA580C', '#2563EB', '#F97316', '#3B82F6', '#FB923C', '#60A5FA', '#FDBA74']
+              : ['#1E3A8A', '#9A3412', '#1D4ED8', '#C2410C', '#2563EB', '#EA580C', '#3B82F6', '#F97316'],
             colorMappingBy: 'id',
             itemStyle: {
-              borderColor: '#101F30',
+              borderColor: isLight ? '#FFFFFF' : '#1C2541',
               borderWidth: 2,
               gapWidth: 2
             }

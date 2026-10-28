@@ -20,27 +20,27 @@ export const DelinquencyHeatmap: React.FC = () => {
     : Object.values(stateAggs).sort((a, b) => b.posCrs - a.posCrs).slice(0, 8);
 
   const getCellColor = (bucketId: string, share: number) => {
-    if (share <= 0) return 'bg-surface/40 text-text-muted';
+    if (share <= 0) return 'bg-surface-elevated/40 text-text-muted';
 
     if (bucketId === '1.B1') {
-      if (share > 75) return 'bg-teal-dark/30 text-teal border border-teal/30';
-      return 'bg-teal-dark/15 text-text-secondary';
+      if (share > 75) return 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 border border-blue-300/60 font-bold';
+      return 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400';
     }
 
     if (bucketId === '2.B2') {
-      if (share > 20) return 'bg-status-b2/40 text-status-b2 font-bold border border-status-b2/40';
-      return 'bg-status-b2/20 text-status-b2';
+      if (share > 20) return 'bg-orange-100 text-orange-800 dark:bg-orange-950/50 dark:text-orange-300 font-bold border border-orange-300/60';
+      return 'bg-orange-50 text-orange-700 dark:bg-orange-950/30 dark:text-orange-400';
     }
 
     if (bucketId === '3.B3') {
-      if (share > 15) return 'bg-status-b3/50 text-status-b3 font-bold border border-status-b3/50';
-      return 'bg-status-b3/20 text-status-b3';
+      if (share > 15) return 'bg-orange-200 text-orange-900 dark:bg-orange-900/50 dark:text-orange-200 font-bold border border-orange-400/60';
+      return 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300';
     }
 
-    // NPA
-    if (share > 25) return 'bg-coral/45 text-coral-light font-bold border border-coral/60 shadow-glow-coral';
-    if (share > 10) return 'bg-coral/25 text-coral border border-coral/30';
-    return 'bg-coral/15 text-coral-dark';
+    // NPA (90+ DPD)
+    if (share > 25) return 'bg-orange-600 text-white font-bold border border-orange-700 shadow-sm';
+    if (share > 10) return 'bg-orange-500 text-white font-semibold';
+    return 'bg-orange-200 text-orange-900 font-medium';
   };
 
   return (

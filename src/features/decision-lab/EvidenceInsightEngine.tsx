@@ -46,7 +46,7 @@ Confidence Caveat: ${insight.confidence}
             onClick={() => setIsAiAdapterActive(!isAiAdapterActive)}
             className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
               isAiAdapterActive
-                ? 'bg-accent-purple/20 text-accent-purple border border-accent-purple/40 font-semibold'
+                ? 'bg-blue-100 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-300 font-semibold'
                 : 'text-text-muted hover:text-text-secondary'
             }`}
             title="Toggle optional AI narrative summary adapter"
@@ -59,10 +59,10 @@ Confidence Caveat: ${insight.confidence}
 
       {/* Optional AI Adapter Banner */}
       {isAiAdapterActive && (
-        <div className="glass-panel p-4 rounded-xl border border-accent-purple/40 bg-accent-purple/5 space-y-2 animate-in fade-in duration-200">
+        <div className="glass-panel p-4 rounded-xl border border-blue-300/60 bg-blue-50/40 dark:bg-blue-950/20 space-y-2 animate-in fade-in duration-200">
           <div className="flex items-center space-x-2">
-            <Bot className="w-4 h-4 text-accent-purple" />
-            <h4 className="text-xs font-bold text-accent-purple uppercase tracking-wider font-mono">
+            <Bot className="w-4 h-4 text-teal" />
+            <h4 className="text-xs font-bold text-teal uppercase tracking-wider font-mono">
               Executive AI Synthesis (Client-side Deterministic Model)
             </h4>
           </div>

@@ -4,6 +4,8 @@ export type ActiveTab = 'india-pulse' | 'hotspot-explorer' | 'decision-lab';
 
 export type NormalizationMode = 'normalized' | 'reported';
 
+export type ThemeMode = 'light' | 'dark';
+
 export interface StateAggregate {
   state: string;
   posCrs: number;

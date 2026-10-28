@@ -129,7 +129,7 @@ export const DataQualityModal: React.FC = () => {
           </span>
           <button
             onClick={() => setIsDataQualityOpen(false)}
-            className="px-4 py-1.5 rounded-lg bg-teal text-background font-bold shadow-glow hover:bg-teal-light transition-colors"
+            className="px-4 py-1.5 rounded-lg bg-teal text-white font-bold shadow-glow hover:bg-teal-light transition-colors"
           >
             Close Audit
           </button>

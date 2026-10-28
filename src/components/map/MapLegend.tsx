@@ -2,51 +2,99 @@ import React from 'react';
 import { useAppStore } from '../../store/useAppStore';
 
 export const MapLegend: React.FC = () => {
-  const { selectedLayer, selectedState } = useAppStore();
+  const { selectedLayer, selectedState, theme } = useAppStore();
 
   const getLegendDetails = () => {
+    if (theme === 'light') {
+      switch (selectedLayer) {
+        case 'exposure':
+          return {
+            title: 'Collections POS (₹ Cr)',
+            stops: [
+              { color: 'rgb(219, 234, 254)', label: '< ₹0.5 Cr' },
+              { color: 'rgb(147, 197, 253)', label: '₹0.5 – 1 Cr' },
+              { color: 'rgb(96, 165, 250)', label: '₹1 – 3 Cr' },
+              { color: 'rgb(37, 99, 235)', label: '₹3 – 5 Cr' },
+              { color: '#1D4ED8', label: '> ₹5 Cr' }
+            ]
+          };
+        case 'pressure':
+          return {
+            title: 'Delinquent Exposure Ratio (B2, B3 & NPA)',
+            stops: [
+              { color: 'rgb(255, 237, 213)', label: '< 5%' },
+              { color: 'rgb(254, 215, 170)', label: '5 – 15%' },
+              { color: 'rgb(251, 146, 60)', label: '15 – 30%' },
+              { color: 'rgb(234, 88, 12)', label: '30 – 50%' },
+              { color: '#C2410C', label: '> 50%' }
+            ]
+          };
+        case 'sales':
+          return {
+            title: 'Sales Disbursements (₹ Lakhs)',
+            stops: [
+              { color: 'rgb(191, 219, 254)', label: '< ₹2 L' },
+              { color: 'rgb(147, 197, 253)', label: '₹2 – 5 L' },
+              { color: 'rgb(59, 130, 246)', label: '₹5 – 10 L' },
+              { color: 'rgb(37, 99, 235)', label: '₹10 – 15 L' },
+              { color: '#1E40AF', label: '> ₹15 L' }
+            ]
+          };
+        case 'allocation':
+          return {
+            title: 'Unallocated Portfolio Share',
+            stops: [
+              { color: 'rgb(254, 243, 199)', label: '< 25%' },
+              { color: 'rgb(253, 230, 138)', label: '25 – 50%' },
+              { color: 'rgb(245, 158, 11)', label: '50 – 75%' },
+              { color: '#EA580C', label: '> 75%' }
+            ]
+          };
+      }
+    }
+
     switch (selectedLayer) {
       case 'exposure':
         return {
           title: 'Collections POS (₹ Cr)',
           stops: [
-            { color: 'rgba(20, 60, 70, 0.75)', label: '< ₹0.5 Cr' },
-            { color: 'rgba(28, 98, 105, 0.85)', label: '₹0.5 – 1 Cr' },
-            { color: 'rgba(40, 145, 140, 0.9)', label: '₹1 – 3 Cr' },
-            { color: 'rgba(65, 185, 175, 0.95)', label: '₹3 – 5 Cr' },
-            { color: '#54D7C7', label: '> ₹5 Cr' }
+            { color: 'rgba(30, 58, 138, 0.75)', label: '< ₹0.5 Cr' },
+            { color: 'rgba(29, 78, 216, 0.85)', label: '₹0.5 – 1 Cr' },
+            { color: 'rgba(37, 99, 235, 0.9)', label: '₹1 – 3 Cr' },
+            { color: 'rgba(96, 165, 250, 0.95)', label: '₹3 – 5 Cr' },
+            { color: '#60A5FA', label: '> ₹5 Cr' }
           ]
         };
       case 'pressure':
         return {
           title: 'Delinquent Exposure Ratio (B2, B3 & NPA)',
           stops: [
-            { color: 'rgba(60, 75, 95, 0.7)', label: '< 5%' },
-            { color: 'rgba(234, 179, 8, 0.8)', label: '5 – 15%' },
-            { color: 'rgba(249, 115, 22, 0.85)', label: '15 – 30%' },
-            { color: 'rgba(244, 63, 94, 0.9)', label: '30 – 50%' },
-            { color: '#FF8A70', label: '> 50%' }
+            { color: 'rgba(124, 45, 18, 0.7)', label: '< 5%' },
+            { color: 'rgba(194, 65, 12, 0.8)', label: '5 – 15%' },
+            { color: 'rgba(234, 88, 12, 0.85)', label: '15 – 30%' },
+            { color: 'rgba(249, 115, 22, 0.9)', label: '30 – 50%' },
+            { color: '#FB923C', label: '> 50%' }
           ]
         };
       case 'sales':
         return {
           title: 'Sales Disbursements (₹ Lakhs)',
           stops: [
-            { color: 'rgba(25, 55, 95, 0.7)', label: '< ₹2 L' },
+            { color: 'rgba(30, 64, 175, 0.7)', label: '< ₹2 L' },
             { color: 'rgba(37, 99, 235, 0.8)', label: '₹2 – 5 L' },
             { color: 'rgba(59, 130, 246, 0.85)', label: '₹5 – 10 L' },
             { color: 'rgba(96, 165, 250, 0.9)', label: '₹10 – 15 L' },
-            { color: '#63A9F5', label: '> ₹15 L' }
+            { color: '#93C5FD', label: '> ₹15 L' }
           ]
         };
       case 'allocation':
         return {
           title: 'Unallocated Portfolio Share',
           stops: [
-            { color: 'rgba(30, 50, 80, 0.7)', label: '< 25%' },
-            { color: 'rgba(14, 165, 233, 0.8)', label: '25 – 50%' },
-            { color: 'rgba(99, 102, 241, 0.85)', label: '50 – 75%' },
-            { color: '#A78BFA', label: '> 75%' }
+            { color: 'rgba(120, 53, 15, 0.7)', label: '< 25%' },
+            { color: 'rgba(180, 83, 9, 0.8)', label: '25 – 50%' },
+            { color: 'rgba(217, 119, 6, 0.85)', label: '50 – 75%' },
+            { color: '#FB923C', label: '> 75%' }
           ]
         };
     }

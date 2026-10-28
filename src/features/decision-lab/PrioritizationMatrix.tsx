@@ -228,7 +228,7 @@ export const PrioritizationMatrix: React.FC = () => {
                       setSelectedState(item.name);
                       setActiveTab('hotspot-explorer');
                     }}
-                    className="p-1 rounded bg-surface hover:bg-teal hover:text-background text-teal transition-colors"
+                    className="p-1 rounded bg-surface hover:bg-teal hover:text-white text-teal transition-colors"
                     title={`Inspect ${item.name} in Hotspot Explorer`}
                   >
                     <ArrowRight className="w-3.5 h-3.5" />

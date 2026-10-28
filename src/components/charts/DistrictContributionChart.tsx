@@ -46,7 +46,7 @@ export const DistrictContributionChart: React.FC = () => {
           <button
             onClick={() => setSortBy('pos')}
             className={`px-2 py-0.5 rounded transition-colors ${
-              sortBy === 'pos' ? 'bg-teal text-background font-bold' : 'text-text-muted hover:text-text-secondary'
+              sortBy === 'pos' ? 'bg-teal text-white font-bold' : 'text-text-muted hover:text-text-secondary'
             }`}
           >
             Absolute (₹ Cr)
@@ -54,7 +54,7 @@ export const DistrictContributionChart: React.FC = () => {
           <button
             onClick={() => setSortBy('share')}
             className={`px-2 py-0.5 rounded transition-colors ${
-              sortBy === 'share' ? 'bg-teal text-background font-bold' : 'text-text-muted hover:text-text-secondary'
+              sortBy === 'share' ? 'bg-teal text-white font-bold' : 'text-text-muted hover:text-text-secondary'
             }`}
           >
             Share (%)

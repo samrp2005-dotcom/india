@@ -37,7 +37,7 @@ const STATE_SLUG_MAP: Record<string, string> = {
 const INDIA_CENTER: [number, number] = [79.2, 22.5];
 const INDIA_ZOOM = 4.1;
 
-// Self-contained dark style (0 API keys, 0 watermarks)
+// Self-contained base styles (0 API keys, 0 watermarks)
 const DARK_BASE_STYLE: maplibregl.StyleSpecification = {
   version: 8,
   sources: {},
@@ -46,7 +46,21 @@ const DARK_BASE_STYLE: maplibregl.StyleSpecification = {
       id: 'bg',
       type: 'background',
       paint: {
-        'background-color': '#08131F'
+        'background-color': '#0B132B'
+      }
+    }
+  ]
+};
+
+const LIGHT_BASE_STYLE: maplibregl.StyleSpecification = {
+  version: 8,
+  sources: {},
+  layers: [
+    {
+      id: 'bg',
+      type: 'background',
+      paint: {
+        'background-color': '#F8FAFC'
       }
     }
   ]
@@ -55,10 +69,11 @@ const DARK_BASE_STYLE: maplibregl.StyleSpecification = {
 function getStateColor(
   stData: StateAggregate | undefined,
   layer: LayerType,
-  maxVal: number
+  maxVal: number,
+  theme: 'light' | 'dark' = 'light'
 ): [number, number, number, number] {
   if (!stData || stData.posCrs <= 0) {
-    return [16, 31, 48, 170]; // Unmapped dark surface
+    return theme === 'light' ? [241, 245, 249, 220] : [28, 37, 65, 170]; // Unmapped surface
   }
 
   let metricVal = 0;
@@ -72,36 +87,73 @@ function getStateColor(
 
   const ratio = Math.min(Math.max(metricVal / (maxVal || 1), 0.1), 1.0);
 
+  if (theme === 'light') {
+    if (layer === 'exposure') {
+      // Light mode Pure Blue Scale: soft ice blue [219, 234, 254] to deep royal blue [29, 78, 216]
+      return [
+        Math.round(219 - ratio * 190),
+        Math.round(234 - ratio * 156),
+        Math.round(254 - ratio * 38),
+        240
+      ];
+    } else if (layer === 'pressure') {
+      // Light mode Pure Orange Scale: soft peach [255, 237, 213] to deep burnt orange [194, 65, 12]
+      return [
+        Math.round(255 - ratio * 61),
+        Math.round(237 - ratio * 172),
+        Math.round(213 - ratio * 201),
+        240
+      ];
+    } else if (layer === 'sales') {
+      // Light mode Sapphire/Cobalt Blue Scale: pale sky [191, 219, 254] to deep navy blue [30, 58, 138]
+      return [
+        Math.round(191 - ratio * 161),
+        Math.round(219 - ratio * 161),
+        Math.round(254 - ratio * 116),
+        240
+      ];
+    } else {
+      // Light mode Warm Amber/Orange Scale: light apricot [254, 243, 199] to deep amber-orange [217, 119, 6]
+      return [
+        Math.round(254 - ratio * 37),
+        Math.round(243 - ratio * 124),
+        Math.round(199 - ratio * 193),
+        240
+      ];
+    }
+  }
+
+  // Dark mode scales: Blue & Orange shades
   if (layer === 'exposure') {
-    // Teal scale: from deep teal [22, 75, 85] to brilliant cyan-teal [84, 215, 199]
+    // Blue scale (Navy to Light Blue)
     return [
-      Math.round(22 + ratio * 62),
-      Math.round(75 + ratio * 140),
-      Math.round(85 + ratio * 114),
+      Math.round(30 + ratio * 66),
+      Math.round(64 + ratio * 101),
+      Math.round(175 + ratio * 75),
       220
     ];
   } else if (layer === 'pressure') {
-    // Coral / Amber scale: from [45, 60, 80] to [255, 138, 112]
+    // Orange scale (Deep Rust to Bright Orange)
     return [
-      Math.round(45 + ratio * 210),
-      Math.round(60 + ratio * 78),
-      Math.round(80 + ratio * 32),
+      Math.round(124 + ratio * 127),
+      Math.round(45 + ratio * 101),
+      Math.round(18 + ratio * 42),
       220
     ];
   } else if (layer === 'sales') {
-    // Accent blue scale: from [25, 55, 95] to [99, 169, 245]
+    // Sapphire blue scale
     return [
-      Math.round(25 + ratio * 74),
-      Math.round(55 + ratio * 114),
-      Math.round(95 + ratio * 150),
+      Math.round(30 + ratio * 66),
+      Math.round(58 + ratio * 107),
+      Math.round(138 + ratio * 112),
       220
     ];
   } else {
-    // Purple / Cyan scale
+    // Amber orange scale
     return [
-      Math.round(30 + ratio * 137),
-      Math.round(50 + ratio * 89),
-      Math.round(80 + ratio * 170),
+      Math.round(120 + ratio * 125),
+      Math.round(53 + ratio * 105),
+      Math.round(15 + ratio * 21),
       220
     ];
   }
@@ -127,7 +179,8 @@ export const IndiaMap: React.FC = () => {
     branches,
     showBranches,
     showBubbles,
-    normalizationMode
+    normalizationMode,
+    theme
   } = useAppStore();
 
   const stateAggregates = getActiveStateAggregates();
@@ -146,7 +199,7 @@ export const IndiaMap: React.FC = () => {
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current,
-      style: DARK_BASE_STYLE,
+      style: theme === 'dark' ? DARK_BASE_STYLE : LIGHT_BASE_STYLE,
       center: INDIA_CENTER,
       zoom: INDIA_ZOOM,
       minZoom: 3.5,
@@ -175,6 +228,13 @@ export const IndiaMap: React.FC = () => {
       mapRef.current = null;
     };
   }, []);
+
+  // Update map background style when theme toggles
+  useEffect(() => {
+    if (mapRef.current && mapLoaded) {
+      mapRef.current.setStyle(theme === 'dark' ? DARK_BASE_STYLE : LIGHT_BASE_STYLE);
+    }
+  }, [theme, mapLoaded]);
 
   // Handle State Selection & Camera flyTo
   useEffect(() => {
@@ -261,18 +321,20 @@ export const IndiaMap: React.FC = () => {
         lineWidthMaxPixels: 3.5,
         getLineColor: (f: any) => {
           const stName = f.properties?.st_nm;
-          if (stName === selectedState) return [255, 138, 112, 255]; // Coral highlight
-          return [30, 53, 77, 220]; // Sleek navy borders
+          if (stName === selectedState) {
+            return theme === 'light' ? [234, 88, 12, 255] : [251, 146, 60, 255]; // Orange highlight
+          }
+          return theme === 'light' ? [203, 213, 225, 255] : [46, 64, 104, 220]; // Slate borders
         },
         getLineWidth: (f: any) => (f.properties?.st_nm === selectedState ? 3.5 : 1.5),
         getFillColor: (f: any) => {
           const stName = f.properties?.st_nm;
           const stData = stateAggregates[stName];
-          return getStateColor(stData, selectedLayer, maxVal);
+          return getStateColor(stData, selectedLayer, maxVal, theme);
         },
         pickable: true,
         autoHighlight: true,
-        highlightColor: [84, 215, 199, 120],
+        highlightColor: theme === 'light' ? [37, 99, 235, 120] : [96, 165, 250, 120],
         onHover: (info: any) => {
           if (info.object) {
             const stName = info.object.properties?.st_nm;
@@ -297,8 +359,8 @@ export const IndiaMap: React.FC = () => {
           }
         },
         updateTriggers: {
-          getFillColor: [selectedLayer, normalizationMode, stateAggregates],
-          getLineColor: [selectedState],
+          getFillColor: [selectedLayer, normalizationMode, stateAggregates, theme],
+          getLineColor: [selectedState, theme],
           getLineWidth: [selectedState]
         }
       })
@@ -315,8 +377,10 @@ export const IndiaMap: React.FC = () => {
           lineWidthMinPixels: 1.2,
           getLineColor: (f: any) => {
             const distName = f.properties?.district;
-            if (distName === selectedDistrict) return [255, 138, 112, 255];
-            return [84, 215, 199, 180];
+            if (distName === selectedDistrict) {
+              return theme === 'light' ? [234, 88, 12, 255] : [251, 146, 60, 255]; // Orange highlight
+            }
+            return theme === 'light' ? [37, 99, 235, 220] : [96, 165, 250, 180]; // Blue district border
           },
           getLineWidth: (f: any) => (f.properties?.district === selectedDistrict ? 3.0 : 1.2),
           getFillColor: (f: any) => {
@@ -325,13 +389,13 @@ export const IndiaMap: React.FC = () => {
               (d) => d.district.toLowerCase() === distName?.toLowerCase() && d.state === selectedState
             );
             if (dData && dData.posCrs > 0) {
-              return [40, 145, 140, 200];
+              return theme === 'light' ? [37, 99, 235, 200] : [59, 130, 246, 190]; // Blue active fill
             }
-            return [23, 42, 62, 180];
+            return theme === 'light' ? [241, 245, 249, 200] : [28, 37, 65, 180];
           },
           pickable: true,
           autoHighlight: true,
-          highlightColor: [255, 138, 112, 140],
+          highlightColor: theme === 'light' ? [234, 88, 12, 140] : [251, 146, 60, 140],
           onHover: (info: any) => {
             if (info.object) {
               const distName = info.object.properties?.district;
@@ -358,8 +422,9 @@ export const IndiaMap: React.FC = () => {
             }
           },
           updateTriggers: {
-            getLineColor: [selectedDistrict],
-            getLineWidth: [selectedDistrict]
+            getLineColor: [selectedDistrict, theme],
+            getLineWidth: [selectedDistrict],
+            getFillColor: [selectedState, districtAggregates, theme]
           }
         })
       );
@@ -384,8 +449,8 @@ export const IndiaMap: React.FC = () => {
           data: bubbleData,
           getPosition: (d: any) => [d.lng, d.lat],
           getRadius: (d: any) => d.radius,
-          getFillColor: [84, 215, 199, 75],
-          getLineColor: [84, 215, 199, 220],
+          getFillColor: theme === 'light' ? [37, 99, 235, 60] : [96, 165, 250, 75],
+          getLineColor: theme === 'light' ? [37, 99, 235, 220] : [96, 165, 250, 220],
           stroked: true,
           filled: true,
           lineWidthMinPixels: 2,
@@ -407,9 +472,10 @@ export const IndiaMap: React.FC = () => {
           getPosition: (d: any) => [d.lng, d.lat],
           getRadius: (d: any) => Math.max(Math.sqrt(d.disbAmount || 100000) * 16, 12000),
           getFillColor: (d: any) =>
-            d.disbAmount > 0 ? [84, 215, 199, 230] : [99, 169, 245, 160],
-          getLineColor: (d: any) =>
-            d.disbAmount > 0 ? [255, 255, 255, 255] : [30, 53, 77, 220],
+            d.disbAmount > 0
+              ? (theme === 'light' ? [234, 88, 12, 240] : [251, 146, 60, 240]) // Orange for disbursed hubs
+              : (theme === 'light' ? [37, 99, 235, 180] : [96, 165, 250, 160]), // Blue for pipeline hubs
+          getLineColor: () => [255, 255, 255, 255], // Pure White rim
           stroked: true,
           filled: true,
           lineWidthMinPixels: 1.5,
@@ -442,7 +508,8 @@ export const IndiaMap: React.FC = () => {
     stateAggregates,
     branches,
     showBranches,
-    showBubbles
+    showBubbles,
+    theme
   ]);
 
   return (

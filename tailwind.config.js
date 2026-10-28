@@ -4,50 +4,66 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        background: '#08131F',
+        background: 'rgb(var(--color-bg) / <alpha-value>)',
         surface: {
-          DEFAULT: '#101F30',
-          elevated: '#172A3E',
-          card: '#0D1927',
-          subtle: '#142538'
+          DEFAULT: 'rgb(var(--color-surface) / <alpha-value>)',
+          elevated: 'rgb(var(--color-surface-elevated) / <alpha-value>)',
+          card: 'rgb(var(--color-surface-card) / <alpha-value>)',
+          subtle: 'rgb(var(--color-surface-subtle) / <alpha-value>)'
         },
         border: {
-          DEFAULT: '#1E354D',
-          hover: '#2E4C6D',
-          accent: '#396088'
+          DEFAULT: 'rgb(var(--color-border) / <alpha-value>)',
+          hover: 'rgb(var(--color-border-hover) / <alpha-value>)',
+          accent: 'rgb(var(--color-border-accent) / <alpha-value>)'
         },
+        // Blue & its shades (Primary / Action / Exposure)
         teal: {
-          DEFAULT: '#54D7C7',
-          light: '#76E5D7',
-          dark: '#34AFA0',
-          glow: 'rgba(84, 215, 199, 0.25)'
+          DEFAULT: 'rgb(var(--color-teal) / <alpha-value>)',
+          light: 'rgb(var(--color-teal-light) / <alpha-value>)',
+          dark: 'rgb(var(--color-teal-dark) / <alpha-value>)',
+          glow: 'var(--color-teal-glow)'
+        },
+        blue: {
+          DEFAULT: 'rgb(var(--color-teal) / <alpha-value>)',
+          light: 'rgb(var(--color-teal-light) / <alpha-value>)',
+          dark: 'rgb(var(--color-teal-dark) / <alpha-value>)',
+          glow: 'var(--color-teal-glow)'
         },
         accent: {
-          blue: '#63A9F5',
-          cyan: '#38BDF8',
-          purple: '#A78BFA'
+          blue: 'rgb(var(--color-accent-blue) / <alpha-value>)',
+          cyan: 'rgb(var(--color-accent-cyan) / <alpha-value>)',
+          purple: 'rgb(var(--color-accent-purple) / <alpha-value>)'
         },
+        // Orange & its shades (Alerts / Pressure / Focus)
         coral: {
-          DEFAULT: '#FF8A70',
-          light: '#FFA692',
-          dark: '#E06B52',
-          glow: 'rgba(255, 138, 112, 0.25)'
+          DEFAULT: 'rgb(var(--color-coral) / <alpha-value>)',
+          light: 'rgb(var(--color-coral-light) / <alpha-value>)',
+          dark: 'rgb(var(--color-coral-dark) / <alpha-value>)',
+          glow: 'var(--color-coral-glow)'
         },
+        orange: {
+          DEFAULT: 'rgb(var(--color-coral) / <alpha-value>)',
+          light: 'rgb(var(--color-coral-light) / <alpha-value>)',
+          dark: 'rgb(var(--color-coral-dark) / <alpha-value>)',
+          glow: 'var(--color-coral-glow)'
+        },
+        // Status shades strictly in Blue and Orange
         status: {
-          b1: '#38BDF8',
-          b2: '#FBBF24',
-          b3: '#FB923C',
-          npa: '#F43F5E',
-          success: '#34D399'
+          b1: 'rgb(var(--color-status-b1) / <alpha-value>)',
+          b2: 'rgb(var(--color-status-b2) / <alpha-value>)',
+          b3: 'rgb(var(--color-status-b3) / <alpha-value>)',
+          npa: 'rgb(var(--color-status-npa) / <alpha-value>)',
+          success: 'rgb(var(--color-status-success) / <alpha-value>)'
         },
         text: {
-          primary: '#EDF5F7',
-          secondary: '#91A9BA',
-          muted: '#627D98',
-          bright: '#FFFFFF'
+          primary: 'rgb(var(--color-text-primary) / <alpha-value>)',
+          secondary: 'rgb(var(--color-text-secondary) / <alpha-value>)',
+          muted: 'rgb(var(--color-text-muted) / <alpha-value>)',
+          bright: 'rgb(var(--color-text-bright) / <alpha-value>)'
         }
       },
       fontFamily: {
@@ -55,9 +71,9 @@ export default {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace']
       },
       boxShadow: {
-        glow: '0 0 20px -5px rgba(84, 215, 199, 0.3)',
-        'glow-coral': '0 0 20px -5px rgba(255, 138, 112, 0.3)',
-        glass: '0 8px 32px 0 rgba(0, 0, 0, 0.37)'
+        glow: 'var(--shadow-glow)',
+        'glow-coral': 'var(--shadow-glow-coral)',
+        glass: 'var(--shadow-glass)'
       }
     },
   },
